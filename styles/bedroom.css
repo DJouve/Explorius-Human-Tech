@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E5E1FF;
+    overflow: hidden;
+}
+
+.bedroom-furniture {
+    width: 100%;
+    height: 100%;
+}
+
+.bedroom-furniture .window, .bed, .rug-container{
+    width: 30%;
+    height: auto;
+    position: absolute;
+}
+
+.bookcase{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left:15%;
+}
+
+.window{
+    top:15%;
+    left:35%;
+}
+
+.bed{
+    top: 50%;
+    left: 60%;
+}
+
+.rug-container{
+    top: 60%;
+    left: 35%;
+}
+
+.globe{
+    position: absolute;
+    bottom: 50%;
+    left:30%;
+}
+
+.floor{
+    margin: 0;
+    padding: 0;
+    background: #EDE9FF;
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+}
