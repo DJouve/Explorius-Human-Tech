@@ -51,3 +51,22 @@ body
     top: calc(50% - 150px);
     left: calc(50% - 100px);
 }
+
+/*
+*Animation background*
+*/
+
+img.animation
+{
+    animation-name: background-is-moving;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-is-moving
+{
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(-2000px); }
+}
