@@ -32,7 +32,8 @@ body
     position: absolute;
     top: 0; 
     left: 0;
-    width: 250vw;
+    width: 300vw;
+    z-index: 2;
 }
 
 .container-all-elements img.background-mountains
@@ -50,6 +51,15 @@ body
     height: 200px;
     top: calc(50% - 150px);
     left: calc(50% - 100px);
+    z-index: 2;
+}
+
+.container-contents .container-welcoming-user h2
+{
+    font-family: "Fira Sans";
+    font-weight: bold;
+    color: #FDA38C;
+    font-size: 100px;
 }
 
 /*
@@ -59,7 +69,7 @@ body
 img.animation
 {
     animation-name: background-is-moving;
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -67,6 +77,6 @@ img.animation
 
 @keyframes background-is-moving
 {
-    0% { transform: translateX(0px); }
-    100% { transform: translateX(-2000px); }
+    0% { transform: translateX(-10px); }
+    100% { transform: translateX(-2820px); }
 }
