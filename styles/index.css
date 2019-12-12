@@ -56,26 +56,28 @@ h1
 .container-contents
 {
     position: absolute;
-    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 650px;
     height: 200px;
     top: calc(50% - 150px);
-    left: calc(50% - 100px);
+    left: calc(50% - 325px);
     z-index: 2;
 }
 
-.container-contents .container-welcoming-user h2
+.container-contents img.logo-landing-page
 {
-    font-family: "Fira Sans";
-    font-weight: bold;
-    color: #FDA38C;
-    font-size: 100px;
+    height: auto;
+    width: 600px;
 }
 
 a.primaryButton
 {
     text-decoration: none;
-    width: 60px;
-    height: 15px;
+    width: 120px;
+    height: 30px;
     padding: 15px;
     background-color: rgb(119, 213, 219);
     border-radius: 5px;
@@ -84,7 +86,8 @@ a.primaryButton
 a.primaryButton.begin-game
 {
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 22px;
+    text-align: center;
     color: rgba(0, 0, 0, 0.7);
 }
 
