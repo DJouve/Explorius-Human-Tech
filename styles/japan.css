@@ -28,9 +28,9 @@ body
 .background
 {
     top: 0%;
-    left: -2.5vw;
-    width: 105vw;
-    height: 105vh;
+    left: -1vw;
+    width: 101vw;
+    height: 100vh;
     z-index: -10;
 }
 
@@ -44,9 +44,9 @@ body
 }
 .monument
 {
-    top:30%;
-    left: 0%;
-    width: 100%;
+    top:37%;
+    left: 10%;
+    width: 80%;
     height: auto;
 }
 .animal
@@ -76,7 +76,7 @@ body
 }
 .activity
 {
-    top: 24%;
+    top: 30%;
     left: 47.5%;
     width: 5%;
     height: auto;
