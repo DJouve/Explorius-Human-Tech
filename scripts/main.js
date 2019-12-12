@@ -3,7 +3,6 @@ const text = document.querySelectorAll(".text")
 const img = document.querySelectorAll(".img-js")
 const dct = document.querySelectorAll(".dct-js")
 const no = document.querySelector(".no")
-let bool = true
 
 for (let i=0; i<img.length; i++){
     img[i].addEventListener('click', () =>
@@ -32,7 +31,7 @@ no.addEventListener('click', ()=>
 const yes = document.querySelector(".yes")
 const links = ["../pages/japan.html", "../pages/egypt.html", "../pages/india.html", "../pages/kenya.html", "../pages/mexico.html", "../pages/russia.html", "../bedroom.html"]
 let random
-let done = new Array(JSON.parse(tab))
+let done = new Array(window.sessionStorage(JSON.parse(tab)))
 do{
     random = Math.floor(Math.random()*6)
 }

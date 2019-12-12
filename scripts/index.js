@@ -1,0 +1,1 @@
+let initiate = [10]
