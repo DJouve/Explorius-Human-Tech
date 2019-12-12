@@ -39,10 +39,17 @@ body{
     left: 35%;
 }
 
-.globe{
+.globe-container{
     position: absolute;
     bottom: 50%;
     left:30%;
+    height: 30%;
+    width:auto;
+}
+
+.globe{
+    height: 100%;
+    width:auto;
 }
 
 .floor{
