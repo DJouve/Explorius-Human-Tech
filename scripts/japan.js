@@ -1,6 +1,7 @@
 const text = document.querySelectorAll(".text")
 const img = document.querySelectorAll(".img-js")
 const dct = document.querySelectorAll(".dct-js")
+const no = document.querySelector(".no")
 let bool = true
 
 console.log(img)
@@ -17,19 +18,15 @@ for (let i=0; i<img.length; i++){
            }
            setTimeout(() => {
             text[i].classList.add("visible")
-           }, 500);
-           
-        //    if (dct[k].classList.contains("visible-dct"))
-        //    {
-        //        dct[k].classList.remove("visible-dct")
-        //    }
-        //    setTimeout(() => {
-        //     dct[i].classList.add("visible-dct")
-        //     console.log(dct[i])
-        //    }, 500);
-           
+           }, 500);           
        }
-       
-       
     })
 }
+
+no.addEventListener('click', ()=>
+{
+    if (text[3].classList.contains("visible"))
+    {
+        text[3].classList.remove("visible")
+    }
+})
