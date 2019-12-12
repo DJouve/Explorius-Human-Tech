@@ -28,9 +28,9 @@ body
 .background
 {
     top: 0%;
-    left: 0%;
-    width: 100vw;
-    height: 100vh;
+    left: -2.5vw;
+    width: 105vw;
+    height: 105vh;
     z-index: -10;
 }
 
@@ -85,6 +85,7 @@ body
 
 .img-js:hover{
     cursor: pointer;
+    transform: scale(1.1, 1.05);
 }
 
 /* Text CSS */
