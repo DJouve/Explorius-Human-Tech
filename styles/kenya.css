@@ -1,0 +1,146 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    z-index: -15;
+}
+
+.country
+{
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.element
+{
+    position: absolute;
+}
+
+.background
+{
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
+
+.character
+{
+    top: 50%;
+    left: 45%;
+    width: 4.5%;
+    height: auto;
+    z-index: 1;
+}
+.monument
+{
+    top:20%;
+    right: 15%;
+    width: 25%;
+    height: auto;
+}
+.animal
+{
+    top: 74%;
+    left: 35%;
+    width: 4%;
+    height: auto;
+    z-index: 2;
+}
+.object
+{
+    top: 63%;
+    right: 35%;
+    width: 8%;
+    height: auto;
+    z-index: 2;
+}
+.food
+{
+    top: 85%;
+    left: 35%;
+    width: 10%;
+    height: auto;
+    z-index: 2;
+
+}
+.activity
+{
+    top: 44%;
+    right: 5.5%;
+    width: 9%;
+    height: auto;
+    z-index: 2;
+}
+
+.img-js:hover{
+    cursor: pointer;
+    transform: scale(1.03, 1.03);
+}
+
+/* Text CSS */
+
+.text
+{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 30px;
+    height: 20px;
+    left: 43%;
+    top: 55%;
+    z-index: 4;
+    opacity: 0;
+    transition: all 0.5s ease-in 0s;
+}
+
+.text p
+{
+    color: #222;
+    font-size: 2.5px;
+    padding: 2px;
+    margin: 0;
+    transition: opacity 0.7s ease-in 0s;
+    position: absolute;
+}
+.text a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 3px;
+    width: 11px;
+    height: auto;
+    border-radius: 1px;
+    padding: 2px;
+    margin-left: 8%;
+}
+.text .yes
+{
+    background-color: green;
+}
+.text .no 
+{
+    background-color: red;
+}
+
+.visible
+{
+    transform: scale(10, 10);
+    left: 35%;
+    top: 40%;
+    opacity: 1;
+}
+
+.visible-dct
+{
+    opacity: 1;
+}
