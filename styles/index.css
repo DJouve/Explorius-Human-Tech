@@ -14,10 +14,10 @@ body
 }
 
 /*
-* H1 for SEO*
+* H1, p not visible for SEO and rights purpose*
 */
 
-h1
+h1 , p
 {
     opacity: 0;
 }
