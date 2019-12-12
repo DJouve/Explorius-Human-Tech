@@ -8,6 +8,20 @@ body{
     background: #E2F6FE;
 }
 
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.element{
+    cursor: pointer;
+}
+
+.element:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in;
+}
+
 .background{
     width: 120%;
     height:auto;
@@ -17,48 +31,59 @@ body{
     z-index: -1; 
 }
 
-@media screen and (max-width:1024px){
-    .background{
-        top: 30%;
-    }
-  }
-
 .monument{
-    height: 90%;
-    width: 90%;
+    width: 35%;
+    height: auto;
     position: absolute;
-    top: 1%;
-    left: calc(50% - 90%/2);
+    top: 3%;
+    left: calc(50% - 35%/2);
 }
 
 .animal{
-    height: 40%;
-    width: 40%;
+    width: 20%;
+    height: auto;
     position: absolute;
     top: 50%;
-    left:0;
+    left:5%;
 }
 
 .activity{
-    height: 40%;
-    width: 40%;
+    width: 20%;
+    height: auto;
     position: absolute;
-    top: 50%;
-    right: 0;
+    top: 35%;
+    right: 5%;
 }
 
 .child{
-    height: 50%;
-    width: 50%;
+    width: 5%;
+    height: auto;
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 55%;
 }
 
 .food{
     height: 12%;
     width: 12%;
     position: absolute;
-    top: 85%;
+    top: 80%;
     right:5%;
 }
+
+
+/** responsive tablet**/
+@media screen and (max-width:1024px){
+    .background{
+        top: 15%;
+    }
+    .monument{
+        top:15%;
+    }
+    .food{
+        top:70%;
+    }
+    .child{
+        top: 60%;
+    }
+  }

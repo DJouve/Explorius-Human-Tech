@@ -17,68 +17,68 @@ body
 *Style for SVG elements*
 */
 
-.background-india
+.background-scotland
 {
     position: absolute;
     left: -5%;
-    top: 0;
-    right: 0;
+    top: 30%;
+    /* right: 0; */
     height: 110%;
     width: 110%;
 }
 
-.animal-elephant
-{
-    position: absolute;
-    height: 50%;
-    width: 15%;
-    left: 10%;
-    top: 50%;
-}
-
-.food-india
+.animal-scotland
 {
     position: absolute;
     height: 20%;
     width: 15%;
     right: 10%;
-    top: 85%;
+    top: 55%;
 }
 
-.monument-india
+.food-scotland
 {
     position: absolute;
-    height: 70%;
-    width: 50%;
-    top: -5%;
-    left: calc(50% - 25%);
+    height: 20%;
+    width: 5%;
+    right: 35%;
+    top: 90%;
 }
 
-.child-in-india
+.castle-scotland
+{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    top: 40%;
+    right: 50%;
+}
+
+.child-in-scotland
 {
     position: absolute;
     height: auto;
     width: 5%;
-    top: 60%;
-    left: 40%;
+    top: 50%;
+    right: 30%;
 }
 
-.souvenir-from-india
+/* .souvenir-from-scotland
 {
     position: absolute;
     height: 20%;
     width: 10%;
     top: 60%;
     right: 25%;
-}
+} */
 
-.main-activity-india
+.activity-scotland
 {
     position: absolute;
     height: 10%;
     width: 5%;
-    top: 65%;
-    right: 10%;
+    top: 70%;
+    left: 10%;
 }
 
 /* 
@@ -86,16 +86,17 @@ body
 */
 
 @media screen and (max-width:1024px){
-    .background-india, .monument-india 
-    { top: 30%; }
+    .background-scotland { top: 55% }
 
-    .animal-elephant,  
-    .child-in-india, .souvenir-from-india
+    .castle-scotland { top: 60%; }
+
+    .animal-scotland,  
+    .child-in-scotland
     { top : 70%; }
 
-    .food-india
+    .food-scotland
     { top : 90%; }
 
-    .main-activity-india
+    .activity-scotland
     { top : 75%; }
 }
