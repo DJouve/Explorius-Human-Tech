@@ -17,9 +17,85 @@ body
 *Style for SVG elements*
 */
 
-/*
-.taj-mahal-bg
+.background-india
 {
-    height: 100vh;
-    width: 100vw;
-} */
+    position: absolute;
+    left: -5%;
+    top: 0;
+    right: 0;
+    height: 110%;
+    width: 110%;
+}
+
+.animal-elephant
+{
+    position: absolute;
+    height: 50%;
+    width: 15%;
+    left: 10%;
+    top: 50%;
+}
+
+.food-india
+{
+    position: absolute;
+    height: 20%;
+    width: 15%;
+    right: 10%;
+    top: 85%;
+}
+
+.monument-india
+{
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    top: -5%;
+    left: calc(50% - 25%);
+}
+
+.child-in-india
+{
+    position: absolute;
+    height: auto;
+    width: 5%;
+    top: 60%;
+    left: 40%;
+}
+
+.souvenir-from-india
+{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    top: 60%;
+    right: 25%;
+}
+
+.main-activity-india
+{
+    position: absolute;
+    height: 10%;
+    width: 5%;
+    top: 65%;
+    right: 10%;
+}
+
+/* 
+*Responsive on tablet*
+*/
+
+@media screen and (max-width:1024px){
+    .background-india, .monument-india 
+    { top: 30%; }
+
+    .animal-elephant,  
+    .child-in-india, .souvenir-from-india
+    { top : 70%; }
+
+    .food-india
+    { top : 90%; }
+
+    .main-activity-india
+    { top : 75%; }
+}
