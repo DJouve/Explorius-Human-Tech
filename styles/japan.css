@@ -9,13 +9,15 @@ body
 
 .country
 {
-    width: 100%;
-    height: 100%;
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
     opacity: 1;
     position: relative;
     padding: 0;
     margin: 0;
-    z-index: -15;
+    z-index: 0;
+    overflow: hidden;
 }
 
 .element
@@ -25,16 +27,16 @@ body
 
 .background
 {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
     z-index: -10;
 }
 
 .character
 {
-    top: 55%;
+    top: 57%;
     left: 47%;
     width: 6%;
     height: auto;
@@ -43,40 +45,82 @@ body
 .monument
 {
     top:30%;
-    left: 5%;
-    width: 90%;
-    height: 30%;
+    left: 0%;
+    width: 100%;
+    height: auto;
 }
 .animal
 {
-    top: 70%;
-    left: 25%;
+    top: 74%;
+    left: 35%;
     width: 4%;
-    height: 7%;
+    height: auto;
     z-index: 2;
 }
 .object
 {
-    top: 77%;
-    right: 35%;
+    top: 55%;
+    left: 45%;
     width: 10%;
     height: auto;
     z-index: 2;
 }
 .food
 {
-    top: 75%;
-    right: 20%;
+    top: 85%;
+    right: 35%;
     width: 10%;
-    height: 8%;
+    height: auto;
     z-index: 2;
 
 }
 .activity
 {
-    top: 33%;
+    top: 24%;
     left: 47.5%;
     width: 5%;
-    height: 5%;
+    height: auto;
     z-index: 2;
+}
+
+.img-js:hover{
+    cursor: pointer;
+}
+
+/* Text CSS */
+
+.text
+{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 30px;
+    height: 20px;
+    left: 50%;
+    top: 58%;
+    z-index: 4;
+    opacity: 0;
+    transition: all 0.5s ease-in 0s;
+}
+
+.text p
+{
+    color: #222;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.7s ease-in 0s;
+    position:absolute;
+    z-index: 5;
+}
+
+.visible
+{
+    transform: scale(10, 10);
+    left: 35%;
+    top: 40%;
+    opacity: 1;
+}
+
+.visible-dct
+{
+    opacity: 1;
 }
