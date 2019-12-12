@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin:0;
+    width: 100vw;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+    background: #E2F6FE;
+}
+
+.background{
+    width: 120%;
+    height:auto;
+    position: absolute;
+    top: 5%;
+    left: -5%;
+    z-index: -1; 
+}
+
+@media screen and (max-width:1024px){
+    .background{
+        top: 30%;
+    }
+  }
+
+.monument{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 80%/2);
+}
+
+.animal{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+
+.activity{
+    height: 25%;
+    width: 25%;
+    position: absolute;
+    top: 60%;
+    right: 5%;
+}
+
+.child{
+    height: 35%;
+    width: 35%;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+
+.food{
+    height: 7%;
+    width: 7%;
+    position: absolute;
+    top: 85%;
+    left: 70%;
+}
