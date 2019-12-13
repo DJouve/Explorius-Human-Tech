@@ -2,17 +2,17 @@
 
 class Journey {
     constructor() {
-        this.game = document.querySelector('body')
-        this.welcomeAudio = this.game.querySelector('.js-welcome-audio')
-        this.monumentAudio = this.game.querySelector('.js-monument-audio')
-        this.animalAudio = this.game.querySelector('.js-animal-audio')
-        this.activityAudio = this.game.querySelector('.js-activity-audio')
-        this.foodAudio = this.game.querySelector('.js-food-audio')
-        this.monument = this.game.querySelector('.js-monument')
-        this.animal = this.game.querySelector('.js-animal')
-        this.activity = this.game.querySelector('.js-activity')
-        this.food = this.game.querySelector('.js-food')
-        this.child = this.game.querySelector('.js-child')
+        this.country = document.querySelector('.country')
+        this.welcomeAudio = this.country.querySelector('.js-welcome-audio')
+        this.monumentAudio = this.country.querySelector('.js-monument-audio')
+        this.animalAudio = this.country.querySelector('.js-animal-audio')
+        this.activityAudio = this.country.querySelector('.js-activity-audio')
+        this.foodAudio = this.country.querySelector('.js-food-audio')
+        this.monument = this.country.querySelector('.js-monument')
+        this.animal = this.country.querySelector('.js-animal')
+        this.activity = this.country.querySelector('.js-activity')
+        this.food = this.country.querySelector('.js-food')
+        this.child = this.country.querySelector('.js-child')
         this.welcome()
         this.monumentInfo()
         this.animalInfo()
@@ -24,13 +24,13 @@ class Journey {
         // by clicking the child
         this.child.addEventListener('click', () => {
             // if no voice is playing already
-            if (!this.game.classList.contains('voice-playing')) {
+            if (!this.country.classList.contains('voice-playing')) {
                 //play the voice
                 this.welcomeAudio.play()
-                this.game.classList.add('voice-playing')
+                this.country.classList.add('voice-playing')
                 // when voice ended, remove class playing
                 this.welcomeAudio.addEventListener('ended', () => {
-                    this.game.classList.remove('voice-playing')
+                    this.country.classList.remove('voice-playing')
                 })
             }
         })
@@ -40,13 +40,13 @@ class Journey {
         // by clicking the monument
         this.monument.addEventListener('click', () => {
             // if no voice is playing already
-            if (!this.game.classList.contains('voice-playing')) {
+            if (!this.country.classList.contains('voice-playing')) {
                 //play the voice
                 this.monumentAudio.play()
-                this.game.classList.add('voice-playing')
+                this.country.classList.add('voice-playing')
                 // when voice ended, remove class playing
                 this.monumentAudio.addEventListener('ended', () => {
-                    this.game.classList.remove('voice-playing')
+                    this.country.classList.remove('voice-playing')
                 })
             }
         })
@@ -56,13 +56,13 @@ class Journey {
         // by clicking the animal
         this.animal.addEventListener('click', () => {
             // if no voice is playing already
-            if (!this.game.classList.contains('voice-playing')) {
+            if (!this.country.classList.contains('voice-playing')) {
                 //play the voice
                 this.animalAudio.play()
-                this.game.classList.add('voice-playing')
+                this.country.classList.add('voice-playing')
                 // when voice ended, remove class playing
                 this.animalAudio.addEventListener('ended', () => {
-                    this.game.classList.remove('voice-playing')
+                    this.country.classList.remove('voice-playing')
                 })
             }
         })
@@ -72,13 +72,13 @@ class Journey {
         // by clicking the activity
         this.activity.addEventListener('click', () => {
             // if no voice is playing already
-            if (!this.game.classList.contains('voice-playing')) {
+            if (!this.country.classList.contains('voice-playing')) {
                 //play the voice
                 this.activityAudio.play()
-                this.game.classList.add('voice-playing')
+                this.country.classList.add('voice-playing')
                 // when voice ended, remove class playing
                 this.activityAudio.addEventListener('ended', () => {
-                    this.game.classList.remove('voice-playing')
+                    this.country.classList.remove('voice-playing')
                 })
             }
         })
@@ -88,13 +88,13 @@ class Journey {
         // by clicking the food
         this.food.addEventListener('click', () => {
             // if no voice is playing already
-            if (!this.game.classList.contains('voice-playing')) {
+            if (!this.country.classList.contains('voice-playing')) {
                 //play the voice
                 this.foodAudio.play()
-                this.game.classList.add('voice-playing')
+                this.country.classList.add('voice-playing')
                 // when voice ended, remove class playing
                 this.foodAudio.addEventListener('ended', () => {
-                    this.game.classList.remove('voice-playing')
+                    this.country.classList.remove('voice-playing')
                 })
             }
         })
