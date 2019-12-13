@@ -2,7 +2,7 @@
 
 class Journey {
     constructor() {
-        this.country = document.querySelector('.country')
+        this.country = document.querySelector('.js-country')
         this.welcomeAudio = this.country.querySelector('.js-welcome-audio')
         this.monumentAudio = this.country.querySelector('.js-monument-audio')
         this.animalAudio = this.country.querySelector('.js-animal-audio')
