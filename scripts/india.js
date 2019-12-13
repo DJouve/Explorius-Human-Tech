@@ -28,26 +28,14 @@ if (annyang) {
 *Init SpeechKITT* 
 */
 
-// Init the browser's own Speech Recognition
-let recognition = new webkitSpeechRecognition();
-
-// Tell KITT the command to use to start listening
-SpeechKITT.setStartCommand(function() {recognition.start()})
-
-// Tell KITT the command to use to abort listening
-SpeechKITT.setAbortCommand(function() {recognition.abort()})
-
-// Register KITT's recognition start event with the browser's Speech Recognition
-recognition.addEventListener('start', SpeechKITT.onStart)
-
-// Register KITT's recognition end event with the browser's Speech Recognition
-recognition.addEventListener('end', SpeechKITT.onEnd)
-
 // Tell KITT to use annyang
-SpeechKITT.annyang();
+SpeechKITT.annyang()
 
 // Define a stylesheet for KITT to use
 SpeechKITT.setStylesheet('https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/1.0.0/themes/flat-amethyst.css')
+
+//Instructional text
+SpeechKITT.setInstructionsText('Rapproche toi du micro et dis "Namasté"')
 
 // Render KITT's interface
 SpeechKITT.vroom()
