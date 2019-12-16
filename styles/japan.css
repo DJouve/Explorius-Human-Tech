@@ -192,6 +192,7 @@ body
     height: 100px;
     will-change: transition;
     transition: all 1s ease-in 0s;
+    z-index: 10;
 }
 .container-left:hover .left-transition
 {
@@ -220,4 +221,49 @@ body
 .display-none
 {
     display: none;
+}
+
+
+
+/* Intro de page */
+.intro 
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(lightblue, white);
+}
+p.background-intro
+{
+    width: 70%;
+    font-size: 70px;
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
+}
+img.background-intro-image
+{
+    width: 16%;
+    height: 30%;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: 30%;
+    left: 42%;
+    position: absolute;
+    border: lightblue solid 3px;
+    background: lightblue;
+}
+
+.animation-intro
+{
+    animation: animation-intro 2s;
+}
+@keyframes animation-intro{
+    0% {border-radius: 50%}
+    50% {border-radius: 0%; width: 16%;height: 30%; top: 30%; left: 42%;}
+    100% {border-radius: 0%;width: 100%; height: 100%; top: 0; left: 0;}
 }

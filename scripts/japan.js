@@ -8,7 +8,7 @@ const container = document.querySelector(".container-flower")
 const flowerClass = [".left-transition", ".top-transition", ".right-transition", ".bottom-transition"]
 for (let i=0; i<flowersContainer.length; i++)
 {
-    for (let j=0; j<200; j++)
+    for (let j=0; j<100; j++)
     {
         let flower = document.createElement("img")
         let flowerdiv = document.createElement("div")
@@ -28,3 +28,15 @@ for (let i=0; i<flowersContainer.length; i++)
         }, 1000)
     })
 }
+
+const imgBgIntro = document.querySelector(".background-intro-image")
+const bgIntro = document.querySelector(".intro")
+
+imgBgIntro.addEventListener("click", () =>
+{
+    imgBgIntro.classList.add("animation-intro")
+    setTimeout(() =>
+    {
+        bgIntro.classList.add("display-none")
+    }, 2000)
+})
