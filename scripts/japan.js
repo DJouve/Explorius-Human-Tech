@@ -26,7 +26,7 @@ for (let i=0; i<flowersContainer.length; i++)
         flowersContainer[i].classList.add("animation-flower")
         setTimeout(() => {
             flowersContainer[i].classList.add("display-none")
-        }, 1000)
+        }, 1500)
     })
 }
 
@@ -36,8 +36,9 @@ const bgIntro = document.querySelector(".intro")
 imgBgIntro.addEventListener("click", () =>
 {
     imgBgIntro.classList.add("animation-intro")
+    bgIntro.classList.add("subanimation-intro")
     setTimeout(() =>
     {
         bgIntro.classList.add("display-none")
-    }, 2000)
+    }, 2100)
 })
