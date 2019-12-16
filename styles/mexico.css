@@ -13,16 +13,16 @@ img{
     width: 100%;
 }
 
-.canvas{
+/* PINATA GAME */
+
+/* .canvas{
     display: none;
-    width: 100vw;
-    height: 100vh;
     position: absolute;
     top:0;
     left:0;
     z-index: 30;
     background-color: rgba(0, 0, 0, 0.7);
-}
+} */
 
 .pinatas{
     /* display:none; */
@@ -59,6 +59,29 @@ img{
     justify-content: center;
     padding-bottom:2%;
 }
+
+.confettis-container{
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 30;
+}
+
+.confetti{
+    position: absolute;
+    height:5px;
+    width: 5px;
+    border-radius: 50%;
+    z-index: 40;
+    transform: translate(0,0);
+    transition: all 3s ease-in 1s;
+}
+
+
+/* MEXICO PAGE */
 
 .country{
     width: 100%;
