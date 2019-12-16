@@ -5,6 +5,8 @@ body
     margin: 0;
     padding: 0;
     z-index: -15;
+    position: relative;
+    overflow: hidden;
 }
 
 .country
@@ -143,4 +145,79 @@ body
 .visible-dct
 {
     opacity: 1;
+}
+
+/* Flower */
+
+.container-left
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+
+}
+.container-top
+{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+
+}
+.container-right
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+
+}
+.container-bottom
+{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+
+}
+.flower
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    will-change: transition;
+    transition: all 1s ease-in 0s;
+}
+.container-left:hover .left-transition
+{
+    left: -2000px;
+}
+.container-top:hover .top-transition
+{
+    top: -2000px;
+}
+.container-right:hover .right-transition
+{
+    right: -2000px;
+}
+.container-bottom:hover .bottom-transition
+{
+    bottom: -2000px;
+}
+.exist
+{
+    text-align: center;
+}
+.display
+{
+    display: block;
+}
+.display-none
+{
+    display: none;
 }
