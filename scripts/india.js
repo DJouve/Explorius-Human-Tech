@@ -1,41 +1,61 @@
 /*
-*Init annyang* 
+*Init annyang and SpeechKITT* 
 */
 
-//Setting language
-
-annyang.setLanguage('fr-FR')
-
 // Check if the user's browser supports speech recognition
-if (!annyang) {
+if (!annyang) 
+{
   console.log("Speech Recognition is not supported")
 }
 
-// Recognize "Namaste" word
-if (annyang) {
-  
-  // Knowing if the user said "Namaste"
-  annyang.addCallback('resultNoMatch', function(phrases) {
-    console.log("Je pense que l'utilisateur a dit: ", phrases[0])
-    console.log("Mais ça pourrait être aussi: ", phrases)
+// Set up SpeechKITT for the page's feature
+if (annyang) 
+{
+
+  // Tell KITT to use annyang
+  SpeechKITT.annyang()
+
+  // Define a stylesheet for KITT to use
+  SpeechKITT.setStylesheet('https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/1.0.0/themes/flat-amethyst.css')
+
+  //Instructional text
+  SpeechKITT.setInstructionsText('Rapproche toi du micro et dis "Namasté"')
+
+  // When a sound is detected, SpeechKITT change the text to the one defined in the function
+  annyang.addCallback('soundstart', function() {
+    SpeechKITT.setInstructionsText('Un instant...')
   })
 
-  // Start listening.
-  annyang.start() 
-} 
+  // Render KITT's interface
+  SpeechKITT.vroom()
+}
 
-/*
-*Init SpeechKITT* 
-*/
+// Set up annyang for the page's feature
+if (annyang)
+{
 
-// Tell KITT to use annyang
-SpeechKITT.annyang()
+  // Set language for annyang
+  annyang.setLanguage('fr-FR')
 
-// Define a stylesheet for KITT to use
-SpeechKITT.setStylesheet('https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/1.0.0/themes/flat-amethyst.css')
+  // Create a command for "Namasté" word
+  let commands = {
+    'Namasté' : function () {
+      console.log('Bravo tu as dit Namasté !')
+    }
+  }
 
-//Instructional text
-SpeechKITT.setInstructionsText('Rapproche toi du micro et dis "Namasté"')
+  // Add the command to annyang
+  annyang.addCommands(commands)
 
-// Render KITT's interface
-SpeechKITT.vroom()
+  // Start listening
+  annyang.start({ autoRestart: true, continuous: false })
+
+  // If the user didn't say "Namasté"
+  annyang.addCallback('resultNoMatch', function(phrases) {
+    if(commands !== phrases[0])
+    {
+      console.log('Faux')
+      console.log('Je pense avoir compris les mots suivants :', phrases)
+    }
+  })
+}
