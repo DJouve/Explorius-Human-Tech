@@ -10,8 +10,6 @@ class Planisphere {
     }
     init() {
         this.globe.addEventListener('click', () => {
-            console.log(this.globe)
-            console.log(this.planisphereContainer)
             this.planisphereContainer.classList.remove('hidden')
         })
     }

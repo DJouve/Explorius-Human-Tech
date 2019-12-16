@@ -16,8 +16,9 @@ img{
 /* PINATA GAME */
 
 
-.pinatas{
-    /* display:none; */
+.hidden{
+    opacity: 0;
+    pointer-events: none;
 }
 
 .pinatas{
@@ -150,6 +151,14 @@ img{
     position: absolute;
     top: 80%;
     right: 10%;
+}
+
+.globe-container{
+    height: 7%;
+    width: auto;
+    position: absolute;
+    bottom: 2%;
+    right:1%;
 }
 
 /** responsive tablet**/
