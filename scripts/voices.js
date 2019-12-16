@@ -1,6 +1,8 @@
-// Zoé
+/**
+ * Voices controls on all the pages
+ **/
 
-class Journey {
+class Speak {
     constructor() {
         this.country = document.querySelector('.js-country')
         this.welcomeAudio = this.country.querySelector('.js-welcome-audio')
@@ -101,43 +103,4 @@ class Journey {
     }
 }
 
-const journey = new Journey()
-
-
-// // Dam's
-
-// const text = document.querySelectorAll(".text")
-// const img = document.querySelectorAll(".img-js")
-// const dct = document.querySelectorAll(".dct-js")
-// const no = document.querySelector(".no")
-
-// for (let i = 0; i < img.length; i++) {
-//     img[i].addEventListener('click', () => {
-//         for (let k = 0; k < dct.length; k++) {
-//             if (text[k].classList.contains("visible")) {
-//                 text[k].classList.remove("visible")
-//             }
-//             setTimeout(() => {
-//                 text[i].classList.add("visible")
-//             }, 500);
-//         }
-//     })
-// }
-
-// no.addEventListener('click', () => {
-//     if (text[3].classList.contains("visible")) {
-//         text[3].classList.remove("visible")
-//     }
-// })
-
-// const yes = document.querySelector(".yes")
-// const links = ["../pages/japan.html", "../pages/egypt.html", "../pages/india.html", "../pages/kenya.html", "../pages/mexico.html", "../pages/russia.html", "../pages/scotland.html"]
-// let done = [sessionStorage.getItem("key")]
-// let random = Math.floor(Math.random()*links.length)
-// yes.setAttribute("href", links[random])
-// links.splice(random, 1)
-// done = links.slice(random, random+1)
-// sessionStorage.setItem("done", done)
-// console.log(links)
-// console.log(done)
-// console.log(yes)
+const speak = new Speak()
