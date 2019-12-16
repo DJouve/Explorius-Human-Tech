@@ -171,7 +171,7 @@ body
 {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 70%;
     width: 30%;
     height: 100%;
 
@@ -185,30 +185,26 @@ body
     height: 50%;
 
 }
+.flower-js
+{
+    will-change: transition;
+    transition: all 1s ease-in 0s;
+}
 .flower
 {
     position: absolute;
     width: 100px;
     height: 100px;
-    will-change: transition;
-    transition: all 1s ease-in 0s;
     z-index: 10;
 }
-.container-left:hover .left-transition
+.animation-flower
 {
-    left: -2000px;
+    animation: animation-flower 1.5s
 }
-.container-top:hover .top-transition
+@keyframes animation-flower
 {
-    top: -2000px;
-}
-.container-right:hover .right-transition
-{
-    right: -2000px;
-}
-.container-bottom:hover .bottom-transition
-{
-    bottom: -2000px;
+    0% {left: ; transform: rotate(0deg);}
+    100%{ left: -2000px;  transform: rotate(450deg);}
 }
 .exist
 {
@@ -256,6 +252,7 @@ img.background-intro-image
     position: absolute;
     border: lightblue solid 3px;
     background: lightblue;
+    will-change: all;
 }
 
 .animation-intro

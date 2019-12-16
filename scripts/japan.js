@@ -8,7 +8,7 @@ const container = document.querySelector(".container-flower")
 const flowerClass = [".left-transition", ".top-transition", ".right-transition", ".bottom-transition"]
 for (let i=0; i<flowersContainer.length; i++)
 {
-    for (let j=0; j<100; j++)
+    for (let j=0; j<150; j++)
     {
         let flower = document.createElement("img")
         let flowerdiv = document.createElement("div")
@@ -23,6 +23,7 @@ for (let i=0; i<flowersContainer.length; i++)
     }
     flowersContainer[i].addEventListener("mouseover", () => 
     {
+        flowersContainer[i].classList.add("animation-flower")
         setTimeout(() => {
             flowersContainer[i].classList.add("display-none")
         }, 1000)
