@@ -94,6 +94,10 @@ body
     width: 100%;
 }
 
+.pointer-hover{
+    cursor: pointer;
+}
+
 /* 
 *Responsive on tablet*
 */
@@ -117,34 +121,42 @@ body
 *Style of the pop up messages*
 */
 
-.container-pop-up
+.background-pop-up
 {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 50;
     transition: all 0.3s;
 }
 
-.container-pop-up .message-congratulations
+.container-pop-up
 {
+    position: absolute;
+    height: 80%;
+    width: 35%;
+    top: calc(50% - 40%);
+    left: calc(50% - 35%/2);
+}
+
+.background-pop-up .container-pop-up .content-pop-up
+{
+    position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 70%;
-    width: 40%;
+    height: 100%;
+    width: 100%;
+    top: calc(50% - 50%);
+    left: calc(50% - 50%);
     background-color: rgb(251, 251, 251);
     border-radius: 10px;
 }
 
-.container-pop-up .message-congratulations img
+.background-pop-up .content-pop-up img
 {
     height: auto;
     width: 200px;
@@ -158,7 +170,7 @@ p
     text-align: center;
 }
 
-a.primaryButton
+a.primary-button
 {
     text-decoration: none;
     width: 170px;
@@ -173,10 +185,18 @@ a.primaryButton
     color: rgb(0, 0, 0);
 }
 
+.content-pop-up.wrong-prononciation a.primary-button
+{
+    width: 150px;
+    height: 40px;
+}
+
 /*
-*Opacity 0 for the pop-up*
+*Opacity 0 for the pop-up and its elements*
 */
-.container-pop-up.hidden
+
+.js-hidden
 {
     opacity: 0;
+    pointer-events: none;
 }

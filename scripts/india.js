@@ -31,18 +31,19 @@ if (annyang)
 }
 
 // Set up annyang for the page's feature
-const showPopUp = document.querySelector('.container-pop-up')
 if (annyang)
 {
 
   // Set language for annyang
   annyang.setLanguage('fr-FR')
 
-  // Create a command for "Namasté" word
+  // Create a command for "Namasté" and display pop up by hearing the right word
+  const showPopUp = document.querySelector('.background-pop-up')
+  const textForSuccess= document.querySelector('.content-pop-up.correct-prononciation')
   let commands = {
     'Namasté' : function () {
-      showPopUp.classList.remove('hidden')
-      // console.log('Bravo tu as dit Namasté !')
+      showPopUp.classList.remove('js-hidden')
+      textForSuccess.classList.remove('js-hidden')
     }
   }
 
@@ -52,12 +53,34 @@ if (annyang)
   // Start listening
   annyang.start({ autoRestart: true, continuous: false })
 
-  // If the user didn't say "Namasté"
+  // If the user didn't say "Namasté" or not correctly
+  const textForFailure= document.querySelector('.content-pop-up.wrong-prononciation')
   annyang.addCallback('resultNoMatch', function(phrases) {
-    if(commands !== phrases[0])
+    if(phrases[0] !== commands)
     {
-      console.log('Faux')
-      console.log('Je pense avoir compris les mots suivants :', phrases)
+      showPopUp.classList.remove('js-hidden')
+      textForFailure.classList.remove('js-hidden')
+      // console.log('Je pense avoir compris les mots suivants :', phrases)
     }
   })
 }
+
+/*
+*Pop up interaction* 
+*/
+
+// Get HTML elements
+const buttonInteraction = document.querySelectorAll('.primary-button')
+const hidePopUp = document.querySelector('.background-pop-up')
+
+// Close pop-up on click of the button element
+for(let i = 0; i < buttonInteraction.length;i++)
+{
+  buttonInteraction[i].addEventListener('click', () => {
+    if(hidePopUp !== hidePopUp.classList.contains('js-hidden'))
+    {
+      hidePopUp.classList.add('js-hidden')
+    }
+  })
+}
+
