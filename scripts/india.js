@@ -31,6 +31,7 @@ if (annyang)
 }
 
 // Set up annyang for the page's feature
+const showPopUp = document.querySelector('.container-pop-up')
 if (annyang)
 {
 
@@ -40,7 +41,8 @@ if (annyang)
   // Create a command for "Namasté" word
   let commands = {
     'Namasté' : function () {
-      console.log('Bravo tu as dit Namasté !')
+      showPopUp.classList.remove('hidden')
+      // console.log('Bravo tu as dit Namasté !')
     }
   }
 
