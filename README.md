@@ -7,7 +7,7 @@ For that, you have multiple interactions as :
  - Travel with a map
  - Enjoy the experence with special features
 
-To fit the atmosphere and create a good design for children, we were inspired by it's a small world wich is an animated serie.
+To fit the atmosphere and create a good design for children, we were inspired by "It's a small world" wich is an animated serie.
 
 ## Libraries 
  - annyang
