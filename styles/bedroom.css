@@ -17,12 +17,80 @@ body{
     position: absolute;
 }
 
-.bookcase{
-    width: 20%;
+.bookcase-container{
+    width: 22%;
     height: auto;
     position: absolute;
-    top: 20%;
-    left:15%;
+    bottom: 15%;
+    left:7%;
+}
+
+.bookcase{
+    height: 100%;
+    width: 100%;
+}
+
+/* souvenirs on bookcase */
+.souvenir{
+    position: absolute;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.souvenir img{
+    width: 100%;
+    height: 100%;
+}
+
+.souvenir-egypt{
+    height: 15%;
+    width: 15%;
+    top: 13%;
+    left:30%;
+}
+
+.souvenir-india{
+    height: 10%;
+    width: 10%;
+    top: 17%;
+    left:60%;
+}
+
+.souvenir-japan{
+    height: 40%;
+    width: 40%;
+    top: 19%;
+    left:30%;
+}
+
+.souvenir-kenya{
+    height: 18%;
+    width: 18%;
+    top: 40%;
+    left:30%;
+}
+
+.souvenir-mexico{
+    height: 10%;
+    width: 10%;
+    top: 45%;
+    left:60%;
+}
+
+.souvenir-russia{
+    height: 8%;
+    width: 8%;
+    top: 60%;
+    left:35%;
+}
+
+.souvenir-scotland{
+    height: 27%;
+    width: 27%;
+    top: 60%;
+    left:50%;
 }
 
 .window{
