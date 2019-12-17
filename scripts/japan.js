@@ -5,7 +5,7 @@ const flowersContainer = document.querySelector(".flower-js")
 // const flowerContainerBottom = document.querySelector(".container-bottom")
 
 const container = document.querySelector(".container-flower")
-for (let j=0; j<150; j++)
+for (let j=0; j<10; j++)
 {
     let flower = document.createElement("img")
     let flowerdiv = document.createElement("div")

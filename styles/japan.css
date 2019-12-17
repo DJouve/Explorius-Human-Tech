@@ -154,8 +154,8 @@ body
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 92%;
+    height: 90%;
 }
 .flower
 {
@@ -241,3 +241,55 @@ img.background-intro-image
     90% {opacity: 1;}
     100% {opacity: 0;}
 }
+
+/** responsive tablet**/
+@media screen and (max-width:1024px){
+    .background{
+        top: 25%;
+    }
+    .monument{
+        top:50%;
+    }
+    .character{
+        top: 70%;
+    }
+    .activity{
+        top: 46%;
+    }
+    .food{
+        top: 80%;
+    }
+    .object
+    {
+        top: 64%;
+    }
+    .animal{
+        top: 75%;
+    }
+
+    /* Intro */
+    p.background-intro
+    {
+        width: 70%;
+        font-size: 50px;
+        bottom: 10%;
+        left: 30%;
+    }
+    img.background-intro-image
+    {
+        width:28%;
+        height: 40%;
+        top: 22%;
+        left: 35%;
+    }
+    .animation-intro
+    {
+        animation: animation-intro-responsive ease 2s;
+    }
+    @keyframes animation-intro-responsive{
+        0% {border-radius: 50%}
+        50% {border-radius: 4%; width: 28%;height: 40%; top: 22%; left: 35%;}
+        90% {border-radius: 2%;width: 90%; height: 90%; top: 5%; left: 5%;opacity: 1;}
+        100% {border-radius: 0%;width: 100%; height: 100%; top: 0%; left: 0%;opacity: 0;}
+    }
+ }
