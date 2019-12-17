@@ -24,6 +24,7 @@ body
 .element
 {
     position: absolute;
+    transition: transform 0.5s ease-out;
 }
 
 .background
@@ -86,7 +87,7 @@ body
 
 .img-js:hover{
     cursor: pointer;
-    transform: scale(1.03, 1.03);
+    transform: scale(1.05);
 }
 
 /* Text CSS */
