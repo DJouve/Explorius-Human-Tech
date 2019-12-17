@@ -5,6 +5,7 @@ body
     margin: 0;
     padding: 0;
     z-index: -15;
+    overflow: hidden;
 }
 
 .country
@@ -23,6 +24,7 @@ body
 .element
 {
     position: absolute;
+    transition: transform 0.5s ease-out;
 }
 
 .background
@@ -85,7 +87,7 @@ body
 
 .img-js:hover{
     cursor: pointer;
-    transform: scale(1.03, 1.03);
+    transform: scale(1.05);
 }
 
 /* Text CSS */
@@ -145,6 +147,74 @@ body
     opacity: 1;
 }
 
+.exist
+{
+    text-align: center;
+}
+.display
+{
+    display: block;
+}
+.display-none
+{
+    display: none;
+}
+
+
+
+/* Intro de page */
+.intro 
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#03224C, lightblue);
+}
+p.background-intro
+{
+    width: 70%;
+    font-size: 70px;
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
+}
+img.background-intro-image
+{
+    width: 16%;
+    height: 30%;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: 30%;
+    left: 42%;
+    position: absolute;
+    border: lightblue solid 3px;
+    background: lightblue;
+    will-change: all;
+}
+
+.animation-intro
+{
+    animation: animation-intro ease 2s;
+}
+.subanimation-intro
+{
+    animation: subanimation-intro ease 2s;
+}
+@keyframes animation-intro{
+    0% {border-radius: 50%}
+    90% {border-radius: 2%;width: 96%; height: 96%; top: 2%; left: 2%;opacity: 1;}
+    100% {border-radius: 0%;width: 100%; height: 100%; top: 0%; left: 0%;opacity: 0;}
+}
+@keyframes subanimation-intro{
+    0% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 /** responsive tablet**/
 @media screen and (max-width:1024px){
     .background{
@@ -191,7 +261,6 @@ body
     }
     @keyframes animation-intro-responsive{
         0% {border-radius: 50%}
-        50% {border-radius: 4%; width: 28%;height: 40%; top: 22%; left: 35%;}
         90% {border-radius: 2%;width: 90%; height: 90%; top: 5%; left: 5%;opacity: 1;}
         100% {border-radius: 0%;width: 100%; height: 100%; top: 0%; left: 0%;opacity: 0;}
     }

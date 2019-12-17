@@ -61,8 +61,8 @@ body
 }
 .object
 {
-    top: 55%;
-    left: 45%;
+    top: 84%;
+    right: 22%;
     width: 10%;
     height: auto;
     z-index: 2;
@@ -170,7 +170,7 @@ body
 }
 @keyframes animation-flower
 {
-    0% {left: transform: rotate(0deg);}
+    0% {left: ;transform: rotate(0deg);}
     100%{ left: 2000px;  transform: rotate(550deg);}
 }
 .exist
@@ -198,7 +198,7 @@ body
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(lightblue, white);
+    background: linear-gradient(#03224C, lightblue);
 }
 p.background-intro
 {
@@ -232,8 +232,7 @@ img.background-intro-image
 }
 @keyframes animation-intro{
     0% {border-radius: 50%}
-    50% {border-radius: 4%; width: 20%;height: 30%; top: 30%; left: 40%;}
-    90% {border-radius: 2%;width: 90%; height: 90%; top: 5%; left: 5%;opacity: 1;}
+    90% {border-radius: 2%;width: 96%; height: 96%; top: 2%; left: 2%;opacity: 1;}
     100% {border-radius: 0%;width: 100%; height: 100%; top: 0%; left: 0%;opacity: 0;}
 }
 @keyframes subanimation-intro{
@@ -288,7 +287,6 @@ img.background-intro-image
     }
     @keyframes animation-intro-responsive{
         0% {border-radius: 50%}
-        50% {border-radius: 4%; width: 28%;height: 40%; top: 22%; left: 35%;}
         90% {border-radius: 2%;width: 90%; height: 90%; top: 5%; left: 5%;opacity: 1;}
         100% {border-radius: 0%;width: 100%; height: 100%; top: 0%; left: 0%;opacity: 0;}
     }

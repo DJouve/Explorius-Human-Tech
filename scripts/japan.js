@@ -40,5 +40,5 @@ imgBgIntro.addEventListener("click", () =>
     setTimeout(() =>
     {
         bgIntro.classList.add("display-none")
-    }, 2100)
+    }, 1900)
 })

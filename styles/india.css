@@ -94,8 +94,13 @@ body
     width: 100%;
 }
 
-.pointer-hover{
+.element{
     cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+.element:hover{
+    transform: scale(1.05);
 }
 
 /* 
