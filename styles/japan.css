@@ -25,6 +25,7 @@ body
 .element
 {
     position: absolute;
+    transition: transform 0.5s ease-out;
 }
 
 .background
@@ -87,7 +88,7 @@ body
 
 .img-js:hover{
     cursor: pointer;
-    transform: scale(1.03, 1.03);
+    transform: scale(1.05);
 }
 
 /* Text CSS */
@@ -168,11 +169,13 @@ body
 {
     animation: animation-flower 2.5s
 }
+/*
 @keyframes animation-flower
 {
     0% {left: ;transform: rotate(0deg);}
     100%{ left: 2000px;  transform: rotate(550deg);}
-}
+} */
+
 .exist
 {
     text-align: center;
