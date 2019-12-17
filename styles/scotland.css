@@ -81,6 +81,15 @@ body
     left: 10%;
 }
 
+.element{
+    cursor: pointer;
+}
+
+.element:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease-out;
+}
+
 /* 
 *Responsive on tablet*
 */
