@@ -5,41 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/russia.css">
+    <link rel="stylesheet" href="../styles/planisphere.css">
     <title>Explorius</title>
 </head>
 
-<body class="js-country">
-    <img class="background" src="../assets/img/russia/russia-background.svg" alt="background">
-    <!-- Monument -->
-    <div class="element monument js-monument">
-        <img src="../assets/img/russia/russia-monument.svg" alt="monument">
-        <audio class="js-monument-audio" src="../assets/audio/russia/russia-monument.mp3"></audio>
+<body>
+    <!-- Planisphere -->
+    <div class="planisphere-container hidden">
+        <div class="planisphere-title-container">
+            <h1 class="planisphere-title">Où veux-tu aller ?</h1>
+        </div>
+        <img class="planisphere" src="../assets/img/planisphere.svg" alt="planisphere">
+        <div class="planisphere-countries">
+            <a href="egypt.html">
+                <div class="planisphere-country planisphere-egypt">
+                    <h2>Égypte</h2>
+                </div>
+            </a>
+            <a href="india.html">
+                <div class="planisphere-country planisphere-india">
+                    <h2>Inde</h2>
+                </div>
+            </a>
+            <a href="japan.html">
+                <div class="planisphere-country planisphere-japan">
+                    <h2>Japon</h2>
+                </div>
+            </a>
+            <a href="kenya.html">
+                <div class="planisphere-country planisphere-kenya">
+                    <h2>Kenya</h2>
+                </div>
+            </a>
+            <a href="mexico.html">
+                <div class="planisphere-country planisphere-mexico">
+                    <h2>Mexique</h2>
+                </div>
+            </a>
+            <a href="russia.html">
+                <div class="planisphere-country planisphere-russia">
+                    <h2>Russie</h2>
+                </div>
+            </a>
+            <a href="scotland.html">
+                <div class="planisphere-country planisphere-scotland">
+                    <h2>Écosse</h2>
+                </div>
+            </a>
+        </div>
     </div>
-    <!-- Animal -->
-    <div class="element animal js-animal">
-        <img src="../assets/img/russia/russia-animal.svg" alt="animal">
-        <audio class="js-animal-audio" src="../assets/audio/russia/russia-animal.mp3"></audio>
+    <!-- Feature matriochka -->
+    <div class="matriochka-container">
+        <div class="matriochka matriochka-1 matriochka-1-js">
+            <img src="../assets/img/russia/matriochka1.svg" alt="/">
+            <div class="matriochka hidden matriochka-2-js">
+                <img src="../assets/img/russia/matriochka2.svg" alt="/">
+                <div class="matriochka matriochka-3-js">
+                    <img src="../assets/img/russia/matriochka3.svg" alt="/">
+                    <div class="matriochka matriochka-4-js">
+                        <img src="../assets/img/russia/matriochka4.svg" alt="/">
+                        <div class="matriochka matriochka-5-js">
+                            <img src="../assets/img/russia/matriochka5.svg" alt="/">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Activity -->
-    <div class="element activity js-activity">
-        <img src="../assets/img/russia/russia-activity.svg" alt="activity">
-        <audio class="js-activity-audio" src="../assets/audio/russia/russia-activity.mp3"></audio>
+    <!-- Russia page -->
+    <div class="js-country">
+        <img class="background" src="../assets/img/russia/russia-background.svg" alt="background">
+        <!-- Monument -->
+        <div class="element monument js-monument">
+            <img src="../assets/img/russia/russia-monument.svg" alt="monument">
+            <audio class="js-monument-audio" src="../assets/audio/russia/russia-monument.mp3"></audio>
+        </div>
+        <!-- Animal -->
+        <div class="element animal js-animal">
+            <img src="../assets/img/russia/russia-animal.svg" alt="animal">
+            <audio class="js-animal-audio" src="../assets/audio/russia/russia-animal.mp3"></audio>
+        </div>
+        <!-- Activity -->
+        <div class="element activity js-activity">
+            <img src="../assets/img/russia/russia-activity.svg" alt="activity">
+            <audio class="js-activity-audio" src="../assets/audio/russia/russia-activity.mp3"></audio>
+        </div>
+        <!-- Child -->
+        <div class="element child js-child">
+            <img src="../assets/img/russia/russia-child.svg" alt="child">
+            <audio class="js-welcome-audio" src="../assets/audio/russia/russia-welcome.mp3"></audio>
+        </div>
+        <!-- Food -->
+        <div class="element food js-food">
+            <img src="../assets/img/russia/russia-food.svg" alt="food">
+            <audio class="js-food-audio" src="../assets/audio/russia/russia-food.mp3"></audio>
+        </div>
     </div>
-    <!-- Child -->
-    <div class="child js-child">
-        <img src="../assets/img/russia/russia-child.svg" alt="child">
-        <audio class="js-welcome-audio" src="../assets/audio/russia/russia-welcome.mp3"></audio>
+    <!-- Show planisphere -->
+    <div class="element globe-container js-globe">
+        <img class="globe" src="../assets/img/bedroom-globe.svg" alt="globe">
     </div>
-    <!-- Food -->
-    <div class="element food js-food">
-        <img src="../assets/img/russia/russia-food.svg" alt="food">
-        <audio class="js-food-audio" src="../assets/audio/russia/russia-food.mp3"></audio>
-    </div>
-    <!-- Next country -->
-    <a class="element globe-container" href="india.html"><img class="globe" src="../assets/img/bedroom-globe.svg"
-            alt="globe"></a>
-    <script src="../scripts/main.js"></script>
+    <script src="../scripts/russia.js"></script>
+    <script src="../scripts/planisphere.js"></script>
+    <script src="../scripts/voices.js"></script>
 </body>
 
 </html>

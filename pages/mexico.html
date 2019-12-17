@@ -5,13 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/mexico.css">
+    <link rel="stylesheet" href="../styles/planisphere.css">
     <title>Explorius</title>
 </head>
 
 <body>
-    <canvas class="canvas js-canvas" width="1024px" height="768px"></canvas>
+    <!-- Planisphere -->
+    <div class="planisphere-container hidden">
+        <div class="planisphere-title-container">
+            <h1 class="planisphere-title">Où veux-tu aller ?</h1>
+        </div>
+        <img class="planisphere" src="../assets/img/planisphere.svg" alt="planisphere">
+        <div class="planisphere-countries">
+            <a href="egypt.html">
+                <div class="planisphere-country planisphere-egypt">
+                    <h2>Égypte</h2>
+                </div>
+            </a>
+            <a href="india.html">
+                <div class="planisphere-country planisphere-india">
+                    <h2>Inde</h2>
+                </div>
+            </a>
+            <a href="japan.html">
+                <div class="planisphere-country planisphere-japan">
+                    <h2>Japon</h2>
+                </div>
+            </a>
+            <a href="kenya.html">
+                <div class="planisphere-country planisphere-kenya">
+                    <h2>Kenya</h2>
+                </div>
+            </a>
+            <a href="mexico.html">
+                <div class="planisphere-country planisphere-mexico">
+                    <h2>Mexique</h2>
+                </div>
+            </a>
+            <a href="russia.html">
+                <div class="planisphere-country planisphere-russia">
+                    <h2>Russie</h2>
+                </div>
+            </a>
+            <a href="scotland.html">
+                <div class="planisphere-country planisphere-scotland">
+                    <h2>Écosse</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Feature pinatas -->
     <div class="pinatas">
+        <div class="confettis-container js-confettis-container"></div>
         <div class="pinatas-first-row">
             <img class="pinata1 js-pinata" src="../assets/img/mexico/pinata1.svg" alt="pinata">
             <img class="pinata2 js-pinata" src="../assets/img/mexico/pinata2.svg" alt="pinata">
@@ -20,6 +67,7 @@
             <img class="pinata3 js-pinata" src="../assets/img/mexico/pinata4.svg" alt="pinata">
         </div>
     </div>
+    <!-- Mexico page -->
     <div class="country js-country">
         <div class="background">
             <img src="../assets/img/mexico/mexico-background.svg" alt="background">
@@ -50,8 +98,13 @@
             <audio class="js-food-audio" src="../assets/audio/mexico/mexico-food.mp3"></audio>
         </div>
     </div>
+    <!-- Show planisphere -->
+    <div class="element globe-container js-globe">
+        <img class="globe" src="../assets/img/bedroom-globe.svg" alt="globe">
+    </div>
     <script src="../scripts/mexico.js"></script>
-    <script src="../scripts/main.js"></script>
+    <script src="../scripts/voices.js"></script>
+    <script src="../scripts/planisphere.js"></script>
 </body>
 
 </html>

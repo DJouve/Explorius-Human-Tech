@@ -13,6 +13,175 @@ img{
     width: 100%;
 }
 
+/* Feature matriochka */
+.matriochka-container
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.7);
+    z-index: 10;
+}
+
+.matriochka
+{
+    position: absolute;
+}
+
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.matriochka-1
+{
+    width: 20%;
+    height: 20%;
+    left: 5vw;
+    top: 20vh; 
+    z-index: 60;
+    cursor: pointer;
+}
+
+.matriochka-2
+{
+    width: 90%;
+    height: 90%;
+    left: 100vw;
+    top: 100vh;
+    z-index: 50;
+
+    animation-name: popping-matriochka-p1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.matriochka-3
+{
+    width: 90%;
+    height: 90%;
+    left: 1vw;
+    top: 1.5vh;
+    z-index: 40;
+
+    animation-name: popping-matriochka-p2;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.matriochka-4
+{
+    width: 90%;
+    height: 90%;
+    left: 1vw;
+    top: 1.5vh;
+    z-index: 30;
+
+    animation-name: popping-matriochka-p3;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.matriochka-5
+{
+    width: 90%;
+    height: 90%;
+    left: 1vw;
+    top: 1.5vh;
+    z-index: 20;
+
+    animation-name: popping-matriochka-p4;
+    animation-duration: 1.5s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes popping-matriochka-p1
+{
+    0%   {
+        transform: translate(0vw, 0vh);
+        top: 4vh;
+        left: 5vw;
+    }
+    40%  {
+        transform: translate(10vw, -10vh);
+        top: 4vh;
+        left: 5vw;
+    }
+    100% {
+        transform: translate(15vw, 0vh);
+        top: 4vh;
+        left: 5vw;
+    }
+}
+
+@keyframes popping-matriochka-p2
+{
+    0%   {
+        transform: translate(0vw, 0vh);
+        top: 4vh;
+        left: 3vw;
+    }
+    40%  {
+        transform: translate(10vw, -10vh);
+        top: 4vh;
+        left: 3vw;
+    }
+    100% {
+        transform: translate(15vw, 0vh);
+        top: 4vh;
+        left: 3vw;
+    }
+}
+
+@keyframes popping-matriochka-p3
+{
+    0%   {
+        transform: translate(0vw, 0vh);
+        top: 3vh;
+        left: 1.5vw;
+    }
+    40%  {
+        transform: translate(10vw, -10vh);
+        top: 3vh;
+        left: 1.5vw;
+    }
+    100% {
+        transform: translate(15vw, 0vh);
+        top: 3vh;
+        left: 1.5vw;
+    }
+}
+
+@keyframes popping-matriochka-p4
+{
+    0%   {
+        transform: translate(0vw, 0vh);
+        top: 2vh;
+        left: 0vw;
+    }
+    40%  {
+        transform: translate(10vw, -10vh);
+        top: 2vh;
+        left: 0vw;
+    }
+    100% {
+        transform: translate(15vw, 0vh);
+        top: 2vh;
+        left: 0vw;
+    }
+}
+
+
+/* Page */
 .element{
     cursor: pointer;
 }
