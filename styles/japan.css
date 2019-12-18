@@ -223,7 +223,13 @@ body
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(#03224C, lightblue);
+}
+.portal
+{
+    position: absolute;
+    z-index: 21;
+    height: 100%;
+    width: 100%;
 }
 p.background-intro
 {
