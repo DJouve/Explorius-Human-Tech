@@ -10,6 +10,7 @@ class Speak {
         this.activityAudio = this.country.querySelector('.js-activity-audio')
         this.foodAudio = this.country.querySelector('.js-food-audio')
         this.souvenirAudio = this.country.querySelector('.js-souvenir-audio')
+        this.voices = [this.welcomeAudio, this.monumentAudio, this.animalAudio, this.activityAudio, this.foodAudio, this.souvenirAudio]
         this.monument = this.country.querySelector('.js-monument')
         this.animal = this.country.querySelector('.js-animal')
         this.activity = this.country.querySelector('.js-activity')
@@ -28,88 +29,160 @@ class Speak {
     welcome() {
         // by clicking the child
         this.child.addEventListener('click', () => {
-            // if no voice is playing already
-            if (!this.country.classList.contains('voice-playing')) {
-                //play the voice
-                this.welcomeAudio.play()
-                this.country.classList.add('voice-playing')
-                // when voice ended, remove class playing
-                this.welcomeAudio.addEventListener('ended', () => {
+            // go throw all the voices
+            for (const _element of this.voices) {
+                // if one voice is already playing
+                if (_element.classList.contains('playing')) {
+                    // stop this voice
+                    _element.pause()
+                    _element.currentTime = 0
+                    _element.classList.remove('playing')
                     this.country.classList.remove('voice-playing')
-                })
+                }
             }
+            //play the voice
+            this.welcomeAudio.play()
+            this.welcomeAudio.classList.add('playing')
+            this.country.classList.add('voice-playing')
+            // when voice ended, remove class playing
+            this.welcomeAudio.addEventListener('ended', () => {
+                this.welcomeAudio.classList.remove('playing')
+                this.country.classList.remove('voice-playing')
+            })
         })
     }
     // gives info about the monument
     monumentInfo() {
         // by clicking the monument
         this.monument.addEventListener('click', () => {
-            // if no voice is playing already
-            if (!this.country.classList.contains('voice-playing')) {
-                //play the voice
-                this.monumentAudio.play()
-                this.country.classList.add('voice-playing')
-                // when voice ended, remove class playing
-                this.monumentAudio.addEventListener('ended', () => {
+            // go throw all the voices
+            for (const _element of this.voices) {
+                // if one voice is already playing
+                if (_element.classList.contains('playing')) {
+                    // stop this voice
+                    _element.pause()
+                    _element.currentTime = 0
+                    _element.classList.remove('playing')
                     this.country.classList.remove('voice-playing')
-                })
+                }
             }
+            //play the voice
+            this.monumentAudio.play()
+            this.monumentAudio.classList.add('playing')
+            this.country.classList.add('voice-playing')
+            // when voice ended, remove class playing
+            this.monumentAudio.addEventListener('ended', () => {
+                this.monumentAudio.classList.remove('playing')
+                this.country.classList.remove('voice-playing')
+            })
         })
     }
     // gives info about the animal
     animalInfo() {
         // by clicking the animal
         this.animal.addEventListener('click', () => {
-            // if no voice is playing already
-            if (!this.country.classList.contains('voice-playing')) {
-                //play the voice
-                this.animalAudio.play()
-                this.country.classList.add('voice-playing')
-                // when voice ended, remove class playing
-                this.animalAudio.addEventListener('ended', () => {
+            // go throw all the voices
+            for (const _element of this.voices) {
+                // if one voice is already playing
+                if (_element.classList.contains('playing')) {
+                    // stop this voice
+                    _element.pause()
+                    _element.currentTime = 0
+                    _element.classList.remove('playing')
                     this.country.classList.remove('voice-playing')
-                })
+                }
             }
+            //play the voice
+            this.animalAudio.play()
+            this.animalAudio.classList.add('playing')
+            this.country.classList.add('voice-playing')
+            // when voice ended, remove class playing
+            this.animalAudio.addEventListener('ended', () => {
+                this.animalAudio.classList.remove('playing')
+                this.country.classList.remove('voice-playing')
+            })
         })
     }
     // gives info about the activity
     activityInfo() {
         // by clicking the activity
         this.activity.addEventListener('click', () => {
-            // if no voice is playing already
-            if (!this.country.classList.contains('voice-playing')) {
-                //play the voice
-                this.activityAudio.play()
-                this.country.classList.add('voice-playing')
-                // when voice ended, remove class playing
-                this.activityAudio.addEventListener('ended', () => {
+            // go throw all the voices
+            for (const _element of this.voices) {
+                // if one voice is already playing
+                if (_element.classList.contains('playing')) {
+                    // stop this voice
+                    _element.pause()
+                    _element.currentTime = 0
+                    _element.classList.remove('playing')
                     this.country.classList.remove('voice-playing')
-                })
+                }
             }
+            //play the voice
+            this.activityAudio.play()
+            this.activityAudio.classList.add('playing')
+            this.country.classList.add('voice-playing')
+            // when voice ended, remove class playing
+            this.activityAudio.addEventListener('ended', () => {
+                this.activityAudio.classList.remove('playing')
+                this.country.classList.remove('voice-playing')
+            })
         })
     }
     // gives info about the food
     foodInfo() {
         // by clicking the food
         this.food.addEventListener('click', () => {
-            // if no voice is playing already
-            if (!this.country.classList.contains('voice-playing')) {
-                //play the voice
-                this.foodAudio.play()
-                this.country.classList.add('voice-playing')
-                // when voice ended, remove class playing
-                this.foodAudio.addEventListener('ended', () => {
+            // go throw all the voices
+            for (const _element of this.voices) {
+                // if one voice is already playing
+                if (_element.classList.contains('playing')) {
+                    // stop this voice
+                    _element.pause()
+                    _element.currentTime = 0
+                    _element.classList.remove('playing')
                     this.country.classList.remove('voice-playing')
-                })
+                }
             }
+            //play the voice
+            this.foodAudio.play()
+            this.foodAudio.classList.add('playing')
+            this.country.classList.add('voice-playing')
+            // when voice ended, remove class playing
+            this.foodAudio.addEventListener('ended', () => {
+                this.foodAudio.classList.remove('playing')
+                this.country.classList.remove('voice-playing')
+            })
         })
     }
     // when user wants to leave the country, give him/her a souvenir
     giveSouvenir() {
         this.iconsElement.addEventListener('mouseover', () => {
+            //play the voice and make the souvenir fall
+            // check if it has not been done before
             if (!this.souvenirAudio.classList.contains('played')) {
+                // go throw all the voices
+                for (const _element of this.voices) {
+                    // if one voice is already playing
+                    if (_element.classList.contains('playing')) {
+                        // stop this voice
+                        _element.pause()
+                        _element.currentTime = 0
+                        _element.classList.remove('playing')
+                        this.country.classList.remove('voice-playing')
+                    }
+                }
+                // play the voice
                 this.souvenirAudio.play()
+                this.souvenirAudio.classList.add('playing')
                 this.souvenirAudio.classList.add('played')
+                this.country.classList.add('voice-playing')
+                // when voice ended, remove class playing
+                this.monumentAudio.addEventListener('ended', () => {
+                    this.monumentAudio.classList.remove('playing')
+                    this.country.classList.remove('voice-playing')
+                })
+                // make souvenir fall
                 this.souvenir.style.transition = 'all 1s ease-out'
                 this.souvenir.style.transform = 'translateY(580px)'
             }
