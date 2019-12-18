@@ -1,7 +1,6 @@
 /**
  * Voices controls on all the pages
  **/
-
 class Speak {
     constructor() {
         this.country = document.querySelector('.js-country')
