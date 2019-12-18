@@ -170,12 +170,12 @@ body
 {
     animation: animation-flower 2.5s
 }
-/*
+
 @keyframes animation-flower
 {
     0% {transform: rotate(0deg);}
     100%{ left: 2000px;  transform: rotate(550deg);}
-} */
+}
 
 .exist
 {
@@ -228,11 +228,11 @@ img.background-intro-image
 
 .animation-intro
 {
-    animation: animation-intro ease 2s;
+    animation: animation-intro ease 1.5s;
 }
 .subanimation-intro
 {
-    animation: subanimation-intro ease 2s;
+    animation: subanimation-intro ease 1.5s;
 }
 @keyframes animation-intro{
     0% {border-radius: 50%}
@@ -287,7 +287,7 @@ img.background-intro-image
     }
     .animation-intro
     {
-        animation: animation-intro-responsive ease 2s;
+        animation: animation-intro-responsive ease 1.5s;
     }
     @keyframes animation-intro-responsive{
         0% {border-radius: 50%}

@@ -5,7 +5,7 @@ const flowersContainer = document.querySelector(".flower-js")
 // const flowerContainerBottom = document.querySelector(".container-bottom")
 
 const container = document.querySelector(".container-flower")
-for (let j=0; j<150; j++)
+for (let j=0; j<100; j++)
 {
     let flower = document.createElement("img")
     let flowerdiv = document.createElement("div")
@@ -33,12 +33,12 @@ for (let i = 0; i<flowers.length; i++)
 const imgBgIntro = document.querySelector(".background-intro-image")
 const bgIntro = document.querySelector(".intro")
 
-imgBgIntro.addEventListener("click", () =>
+imgBgIntro.addEventListener("click",() =>
 {
     imgBgIntro.classList.add("animation-intro")
     bgIntro.classList.add("subanimation-intro")
     setTimeout(() =>
     {
         bgIntro.classList.add("display-none")
-    }, 1990)
+    }, 1490)
 })

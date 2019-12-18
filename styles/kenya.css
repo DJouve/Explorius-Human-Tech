@@ -10,7 +10,7 @@ body
 
 .country
 {
-    background-color: lightblue;
+    background: linear-gradient(rgb(100, 161, 211), rgb(61, 214, 150));
     width: 100vw;
     height: 100vh;
     opacity: 1;
@@ -53,9 +53,9 @@ body
 }
 .animal
 {
-    top: 74%;
+    top: 60%;
     left: 35%;
-    width: 4%;
+    width:7%;
     height: auto;
     z-index: 2;
 }
@@ -215,7 +215,7 @@ img.background-intro-image
 /** responsive tablet**/
 @media screen and (max-width:1024px){
     .background{
-        top: 25%;
+        top: 20%;
     }
     .monument{
         top:50%;
@@ -224,17 +224,17 @@ img.background-intro-image
         top: 70%;
     }
     .activity{
-        top: 46%;
+        top: 60%;
     }
     .food{
-        top: 80%;
+        top: 85%;
     }
     .object
     {
-        top: 64%;
+        top: 75%;
     }
     .animal{
-        top: 75%;
+        top: 65%;
     }
 
     /* Intro */
