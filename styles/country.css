@@ -1,0 +1,101 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    z-index: -15;
+}
+
+
+/* Img CSS */
+
+
+.country
+{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: -15;
+}
+
+.element
+{
+    position: absolute;
+}
+
+.background
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.character
+{
+    top: 55%;
+    left: 47%;
+    width: 6%;
+    height: auto;
+    z-index: 1;
+}
+.monument
+{
+    top:30%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+}
+.animal
+{
+    top: 70%;
+    left: 25%;
+    width: 4%;
+    height: 7%;
+    z-index: 2;
+}
+.object
+{
+    top: 77%;
+    right: 35%;
+    width: 10%;
+    height: auto;
+    z-index: 2;
+}
+.food
+{
+    top: 75%;
+    right: 20%;
+    width: 10%;
+    height: 8%;
+    z-index: 2;
+
+}
+.activity
+{
+    top: 33%;
+    left: 47.5%;
+    width: 5%;
+    height: 5%;
+    z-index: 2;
+}
+
+/* Text CSS */
+
+.text
+{
+    background-color: #fff;
+    color: #222;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 150px;
+    height: 120px;
+    left: 30%;
+    top: 40%;
+    z-index: 4;
+}
