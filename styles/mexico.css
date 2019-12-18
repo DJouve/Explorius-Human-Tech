@@ -13,8 +13,27 @@ img{
     width: 100%;
 }
 
-/* PINATA GAME */
 
+/* Icons */
+
+.icons-container{
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    top: 5%;
+    right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icons-container img{
+    height: 70%;
+    width: 70%;
+}
+
+
+/* PINATA GAME */
 
 .hidden{
     opacity: 0;
@@ -69,7 +88,7 @@ img{
     width: 5px;
     border-radius: 50%;
     z-index: 40;
-    transition: all 3s ease-in 1s;
+    transition: all 3s ease-in 3s;
 }
 
 
@@ -126,7 +145,7 @@ img{
     height: auto;
     position: absolute;
     top: 7%;
-    right: 5%;
+    left: 15%;
 }
 
 .activity{
@@ -153,13 +172,6 @@ img{
     right: 10%;
 }
 
-.globe-container{
-    height: 7%;
-    width: auto;
-    position: absolute;
-    bottom: 2%;
-    right:1%;
-}
 
 /** responsive tablet**/
 @media screen and (max-width:1024px){

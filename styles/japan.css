@@ -8,6 +8,27 @@ body
     position: relative;
 }
 
+/* Icons */
+
+.icons-container{
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    top: 5%;
+    right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.icons-container img{
+    height: 30%;
+    width: 30%;
+}
+
+
+
 .country
 {
     background-color: lightblue;

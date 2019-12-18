@@ -2,19 +2,81 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Explorius</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/japan.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="../assets/img/favicon/favicon-globe.png" type="image/png">
   <link rel="icon" href="../assets/img/favicon/favicon-globe.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/japan.css">
+  <link rel="stylesheet" href="../styles/planisphere.css">
 </head>
+
 <body>
+  <!-- Icons -->
+  <div class="icons-container">
+    <!-- Planisphere icon -->
+    <div class="element map-icon js-map">
+      <img class="map-icon" src="../assets/img/map-icon.svg" alt="map">
+    </div>
+    <!-- Bedroom icon -->
+    <a href="bedroom.html">
+      <div class="element bedroom-icon">
+        <img src="../assets/img/home-icon.svg" alt="home">
+      </div>
+    </a>
+  </div>
+  <!-- Planisphere -->
+  <div class="planisphere-container hidden">
+    <div class="planisphere-title-container">
+      <h1 class="planisphere-title">Où veux-tu aller ?</h1>
+    </div>
+    <img class="planisphere" src="../assets/img/planisphere.svg" alt="planisphere">
+    <div class="planisphere-countries">
+      <a href="egypt.html">
+        <div class="planisphere-country planisphere-egypt">
+          <h2>Égypte</h2>
+        </div>
+      </a>
+      <a href="india.html">
+        <div class="planisphere-country planisphere-india">
+          <h2>Inde</h2>
+        </div>
+      </a>
+      <a href="japan.html">
+        <div class="planisphere-country planisphere-japan">
+          <h2>Japon</h2>
+        </div>
+      </a>
+      <a href="kenya.html">
+        <div class="planisphere-country planisphere-kenya">
+          <h2>Kenya</h2>
+        </div>
+      </a>
+      <a href="mexico.html">
+        <div class="planisphere-country planisphere-mexico">
+          <h2>Mexique</h2>
+        </div>
+      </a>
+      <a href="russia.html">
+        <div class="planisphere-country planisphere-russia">
+          <h2>Russie</h2>
+        </div>
+      </a>
+      <a href="scotland.html">
+        <div class="planisphere-country planisphere-scotland">
+          <h2>Écosse</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Page -->
   <div class="country">
     <div class="element background"> <img class="img-background" src="../assets/img/japan/japan-bg.svg" alt="#"> </div>
     <div class="element character img-js"> <img class="img-character" src="../assets/img/japan/japan-chara.svg" alt="#">
     </div>
-    <div class="element monument img-js"> <img class="img-monument" src="../assets/img/japan/japan-monument.svg" alt="#"> </div>
+    <div class="element monument img-js"> <img class="img-monument" src="../assets/img/japan/japan-monument.svg"
+        alt="#"> </div>
     <div class="element animal img-js"> <img class="img-animal" src="../assets/img/japan/japan-animal.svg" alt="#">
     </div>
     <div class="element object img-js"> <img class="img-object" src="../assets/img/japan/japan-obj.svg" alt="#"> </div>
@@ -23,13 +85,13 @@
     </div>
     <div class="flower-js">
     </div>
-  </div> 
+  </div>
   <!-- Portal Introduction -->
   <div class="intro">
     <p class="background-intro">Bienvenue au Japon</p>
-    <img src="../assets/img/japan/japan-bg.svg" class="background-intro-image"alt="#">
+    <img src="../assets/img/japan/japan-bg.svg" class="background-intro-image" alt="#">
   </div>
-  <script src="../scripts/main.js"></script>
+  <script src="../scripts/planisphere.js"></script>
   <script src="../scripts/japan.js"></script>
 </body>
 

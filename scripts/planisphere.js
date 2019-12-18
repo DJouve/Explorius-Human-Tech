@@ -4,7 +4,7 @@
 
 class Planisphere {
     constructor() {
-        this.globe = document.querySelector('.js-globe')
+        this.mapIcon = document.querySelector('.js-map')
         this.planisphereContainer = document.querySelector('.planisphere-container')
         this.egypt = this.planisphereContainer.querySelector('.js-planisphere-egypt')
         this.india = this.planisphereContainer.querySelector('.js-planisphere-india')
@@ -17,7 +17,7 @@ class Planisphere {
     }
     init() {
         // open planisphere
-        this.globe.addEventListener('click', () => {
+        this.mapIcon.addEventListener('click', () => {
             this.planisphereContainer.classList.remove('hidden')
             // close planisphere
             window.addEventListener('keydown', (_event) => {

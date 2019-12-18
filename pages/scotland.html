@@ -10,9 +10,67 @@
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat&display=swap" rel="stylesheet">
   <title>Explorius</title>
   <link rel="stylesheet" href="../styles/scotland.css">
+  <link rel="stylesheet" href="../styles/planisphere.css">
 </head>
 
 <body>
+  <!-- Icons -->
+  <div class="icons-container">
+    <!-- Planisphere icon -->
+    <div class="element map-icon js-map">
+      <img class="map-icon" src="../assets/img/map-icon.svg" alt="map">
+    </div>
+    <!-- Bedroom icon -->
+    <a href="bedroom.html">
+      <div class="element bedroom-icon">
+        <img src="../assets/img/home-icon.svg" alt="home">
+      </div>
+    </a>
+  </div>
+  <!-- Planisphere -->
+  <div class="planisphere-container hidden">
+    <div class="planisphere-title-container">
+      <h1 class="planisphere-title">Où veux-tu aller ?</h1>
+    </div>
+    <img class="planisphere" src="../assets/img/planisphere.svg" alt="planisphere">
+    <div class="planisphere-countries">
+      <a href="egypt.html">
+        <div class="planisphere-country planisphere-egypt">
+          <h2>Égypte</h2>
+        </div>
+      </a>
+      <a href="india.html">
+        <div class="planisphere-country planisphere-india">
+          <h2>Inde</h2>
+        </div>
+      </a>
+      <a href="japan.html">
+        <div class="planisphere-country planisphere-japan">
+          <h2>Japon</h2>
+        </div>
+      </a>
+      <a href="kenya.html">
+        <div class="planisphere-country planisphere-kenya">
+          <h2>Kenya</h2>
+        </div>
+      </a>
+      <a href="mexico.html">
+        <div class="planisphere-country planisphere-mexico">
+          <h2>Mexique</h2>
+        </div>
+      </a>
+      <a href="russia.html">
+        <div class="planisphere-country planisphere-russia">
+          <h2>Russie</h2>
+        </div>
+      </a>
+      <a href="scotland.html">
+        <div class="planisphere-country planisphere-scotland">
+          <h2>Écosse</h2>
+        </div>
+      </a>
+    </div>
+  </div>
   <!-- Feature -->
   <div class="nessie-container js-nessie-container">
     <img src="../assets/img/scotland/scotland-nessie.svg" alt="">
@@ -33,6 +91,7 @@
     <div class="activity-scotland element"> <img src="../assets/img/scotland/activity-scotland.svg" alt=""> </div>
   </div>
   <script src="../scripts/scotland.js"></script>
+  <script src="../scripts/planisphere.js"></script>
 </body>
 
 </html>

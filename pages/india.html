@@ -10,46 +10,105 @@
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat&display=swap" rel="stylesheet">
   <title>Explorius</title>
   <link rel="stylesheet" href="../styles/india.css">
+  <link rel="stylesheet" href="../styles/planisphere.css">
 </head>
 
-<body class="js-country">
-  <div class="background-india"> <img src="../assets/img/india/background-india.svg" alt=""> </div>
-  <!-- Monument -->
-  <div class="monument-india element js-monument">
-    <img src="../assets/img/india/monument-india.svg" alt="">
-    <audio class="js-monument-audio" src="../assets/audio/india/india-monument.mp3"></audio>
+<body>
+  <!-- Icons -->
+  <div class="icons-container">
+    <!-- Planisphere icon -->
+    <div class="element map-icon js-map">
+      <img class="map-icon" src="../assets/img/map-icon.svg" alt="map">
+    </div>
+    <!-- Bedroom icon -->
+    <a href="bedroom.html">
+      <div class="element bedroom-icon">
+        <img src="../assets/img/home-icon.svg" alt="home">
+      </div>
+    </a>
   </div>
-  <!-- Animal -->
-  <div class="animal-elephant element js-animal">
-    <img src="../assets/img/india/elephant-india.svg" alt="">
-    <audio class="js-animal-audio" src="../assets/audio/india/india-animal.mp3"></audio>
+  <!-- Planisphere -->
+  <div class="planisphere-container hidden">
+    <div class="planisphere-title-container">
+      <h1 class="planisphere-title">Où veux-tu aller ?</h1>
+    </div>
+    <img class="planisphere" src="../assets/img/planisphere.svg" alt="planisphere">
+    <div class="planisphere-countries">
+      <a href="egypt.html">
+        <div class="planisphere-country planisphere-egypt">
+          <h2>Égypte</h2>
+        </div>
+      </a>
+      <a href="india.html">
+        <div class="planisphere-country planisphere-india">
+          <h2>Inde</h2>
+        </div>
+      </a>
+      <a href="japan.html">
+        <div class="planisphere-country planisphere-japan">
+          <h2>Japon</h2>
+        </div>
+      </a>
+      <a href="kenya.html">
+        <div class="planisphere-country planisphere-kenya">
+          <h2>Kenya</h2>
+        </div>
+      </a>
+      <a href="mexico.html">
+        <div class="planisphere-country planisphere-mexico">
+          <h2>Mexique</h2>
+        </div>
+      </a>
+      <a href="russia.html">
+        <div class="planisphere-country planisphere-russia">
+          <h2>Russie</h2>
+        </div>
+      </a>
+      <a href="scotland.html">
+        <div class="planisphere-country planisphere-scotland">
+          <h2>Écosse</h2>
+        </div>
+      </a>
+    </div>
   </div>
-  <!-- Activity -->
-  <div class="main-activity-india element js-activity">
-    <img src="../assets/img/india/activity-india.svg" alt="">
-    <audio class="js-activity-audio" src="../assets/audio/india/india-activity.mp3"></audio>
+  <div class="js-country">
+    <div class="background-india"> <img src="../assets/img/india/background-india.svg" alt=""> </div>
+    <!-- Monument -->
+    <div class="monument-india element js-monument">
+      <img src="../assets/img/india/monument-india.svg" alt="">
+      <audio class="js-monument-audio" src="../assets/audio/india/india-monument.mp3"></audio>
+    </div>
+    <!-- Animal -->
+    <div class="animal-elephant element js-animal">
+      <img src="../assets/img/india/elephant-india.svg" alt="">
+      <audio class="js-animal-audio" src="../assets/audio/india/india-animal.mp3"></audio>
+    </div>
+    <!-- Activity -->
+    <div class="main-activity-india element js-activity">
+      <img src="../assets/img/india/activity-india.svg" alt="">
+      <audio class="js-activity-audio" src="../assets/audio/india/india-activity.mp3"></audio>
+    </div>
+    <!-- Child -->
+    <div class="child-in-india element js-child">
+      <img src="../assets/img/india/child-india.svg" alt="">
+      <audio class="js-welcome-audio" src="../assets/audio/india/india-welcome.mp3"></audio>
+    </div>
+    <!-- Food -->
+    <div class="food-india element js-food">
+      <img src="../assets/img/india/food-india.svg" alt="">
+      <audio class="js-food-audio" src="../assets/audio/india/india-food.mp3"></audio>
+    </div>
+    <!-- Souvenir -->
+    <div class="souvenir-from-india"> <img src="../assets/img/india/souvenir-india.svg" alt=""> </div>
   </div>
-  <!-- Child -->
-  <div class="child-in-india element js-child">
-    <img src="../assets/img/india/child-india.svg" alt="">
-    <audio class="js-welcome-audio" src="../assets/audio/india/india-welcome.mp3"></audio>
-  </div>
-  <!-- Food -->
-  <div class="food-india element js-food">
-    <img src="../assets/img/india/food-india.svg" alt="">
-    <audio class="js-food-audio" src="../assets/audio/india/india-food.mp3"></audio>
-  </div>
-  <!-- Souvenir -->
-  <div class="souvenir-from-india"> <img src="../assets/img/india/souvenir-india.svg" alt=""> </div>
-  <!-- Next country -->
-  <a class="globe-container" href="bedroom.html"><img class="globe" src="../assets/img/bedroom-globe.svg" alt="globe"></a>
   <!-- All elements for the pop-up message (needed for the feature) -->
   <div class="background-pop-up js-hidden">
     <div class="container-pop-up">
       <!--Content of the pop-up if the user said correctly "Namasté" -->
       <div class="content-pop-up correct-prononciation js-hidden">
         <img src="../assets/img/india/congrats-message.svg" alt="">
-        <p>Tu as bien prononcé le mot "Namasté" ! Grâce à ça tu as débloqué le pays suivant :   <strong>Japon.</strong></p>
+        <p>Tu as bien prononcé le mot "Namasté" ! Grâce à ça tu as débloqué le pays suivant : <strong>Japon.</strong>
+        </p>
         <p>Tu peux t'y rendre plus tard grâce au planisphère qui se trouve dans la chambre.</p>
         <a class="primary-button" href="#" title="">D'accord, merci !</a>
       </div>
@@ -67,7 +126,9 @@
   <!-- Script for SpeechKITT library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
   <!-- Script voices and india -->
+  <script src="../scripts/planisphere.js"></script>
   <script src="../scripts/voices.js"></script>
   <script src="../scripts/india.js"></script>
 </body>
+
 </html>
