@@ -5,12 +5,30 @@
     position: absolute;
     top: 0;
     left:0;
-    z-index:50;
+    z-index:70;
 }
 
 .hidden{
     opacity: 0;
     pointer-events: none;
+}
+
+.planisphere-x-container{
+    width:4%;
+    height:4%;
+    position: absolute;
+    top: 2%;
+    right:1%;
+    z-index:80;
+}
+
+.planisphere-x{
+    height: 100%;
+    width: 100%;
+}
+
+.planisphere-x-container:hover{
+    cursor: pointer;
 }
 
 .planisphere-title-container{
@@ -19,6 +37,7 @@
     position: absolute;
     top: 0;
     left:0;
+    z-index:70;
 }
 
 .planisphere-title{
