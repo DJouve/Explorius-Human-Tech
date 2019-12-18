@@ -5,6 +5,9 @@ body{
     overflow: hidden;
 }
 
+/** 
+*Bedroom furniture
+ */
 
 .bedroom-furniture {
     width: 100%;
@@ -17,12 +20,17 @@ body{
     position: absolute;
 }
 
-.bookcase{
-    width: 20%;
+.bookcase-container{
+    width: 22%;
     height: auto;
     position: absolute;
-    top: 20%;
-    left:15%;
+    bottom: 15%;
+    left:7%;
+}
+
+.bookcase{
+    height: 100%;
+    width: 100%;
 }
 
 .window{
@@ -31,8 +39,10 @@ body{
 }
 
 .bed{
-    top: 50%;
-    left: 60%;
+    top: 45%;
+    right: 2%;
+    height: 45%;
+    width: 45%;
 }
 
 .rug-container{
@@ -70,3 +80,136 @@ body{
     height: 30%;
     z-index: -1;
 }
+
+
+/** 
+*Souvenirs on bookcase
+ */
+
+.souvenir{
+    position: absolute;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.souvenir img{
+    width: 100%;
+    height: 100%;
+}
+
+.souvenir-egypt{
+    height: 15%;
+    width: 15%;
+    top: 13%;
+    left:30%;
+}
+
+.souvenir-india{
+    height: 10%;
+    width: 10%;
+    top: 17%;
+    left:60%;
+}
+
+.souvenir-japan{
+    height: 40%;
+    width: 40%;
+    top: 19%;
+    left:30%;
+}
+
+.souvenir-kenya{
+    height: 18%;
+    width: 18%;
+    top: 40%;
+    left:30%;
+}
+
+.souvenir-mexico{
+    height: 10%;
+    width: 10%;
+    top: 45%;
+    left:60%;
+}
+
+.souvenir-russia{
+    height: 8%;
+    width: 8%;
+    top: 60%;
+    left:35%;
+}
+
+.souvenir-scotland{
+    height: 27%;
+    width: 27%;
+    top: 60%;
+    left:50%;
+}
+
+
+/** 
+*Postcards on the wall
+ */
+
+ .postcards-container{
+     position: absolute;
+     right: 10%;
+     top: 15%;
+     height: 35%;
+     width: 25%;
+ }
+
+ .postcard img{
+     height: 100%;
+     width: 100%;
+ }
+
+ .postcard{
+    position: absolute;
+    height: 30%;
+    width: 30%;
+ }
+
+ .postcard-scotland{
+    left: 5%;
+    top: 5%;
+    transform: rotateZ(-7deg);
+ }
+
+ .postcard-japan{
+    left: 40%;
+    top: 4%;
+    transform: rotateZ(-5deg);
+ }
+
+ .postcard-mexico{
+    left: 75%;
+    top: 4%;
+    transform: rotateZ(10deg);
+ }
+
+ .postcard-kenya{
+    left: 5%;
+    top: 48%;
+    transform: rotateZ(-5deg);
+ }
+
+ .postcard-egypt{
+    left: 40%;
+    top: 40%;
+    transform: rotateZ(3deg);
+ }
+
+ .postcard-russia{
+    left: 40%;
+    top: 70%;
+    transform: rotateZ(10deg);
+ }
+
+ .postcard-india{
+    left: 70%;
+    top: 50%;
+    transform: rotateZ(-10deg);
+ }
