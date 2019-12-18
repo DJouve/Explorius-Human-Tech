@@ -13,6 +13,24 @@ img{
     width: 100%;
 }
 
+/* Icons */
+
+.icons-container{
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    top: 5%;
+    right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icons-container img{
+    height: 70%;
+    width: 70%;
+}
+
 /* Feature matriochka */
 .matriochka-container
 {
