@@ -48,7 +48,7 @@ body
 
 .background
 {
-    top: 0%;
+    bottom: 0%;
     left: -2.5vw;
     width: 105vw;
     height: 105vh;
@@ -236,9 +236,6 @@ img.background-intro-image
 
 /** responsive tablet**/
 @media screen and (max-width:1024px){
-    .background{
-        top: 25%;
-    }
     .monument{
         top:50%;
     }
