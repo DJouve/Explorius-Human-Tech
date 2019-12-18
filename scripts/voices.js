@@ -9,16 +9,20 @@ class Speak {
         this.animalAudio = this.country.querySelector('.js-animal-audio')
         this.activityAudio = this.country.querySelector('.js-activity-audio')
         this.foodAudio = this.country.querySelector('.js-food-audio')
+        this.souvenirAudio = this.country.querySelector('.js-souvenir-audio')
         this.monument = this.country.querySelector('.js-monument')
         this.animal = this.country.querySelector('.js-animal')
         this.activity = this.country.querySelector('.js-activity')
         this.food = this.country.querySelector('.js-food')
         this.child = this.country.querySelector('.js-child')
+        this.souvenir = this.country.querySelector('.js-souvenir')
+        this.iconsElement = document.querySelector('.icons-container')
         this.welcome()
         this.monumentInfo()
         this.animalInfo()
         this.activityInfo()
         this.foodInfo()
+        this.giveSouvenir()
     }
     // welcome the user
     welcome() {
@@ -97,6 +101,17 @@ class Speak {
                 this.foodAudio.addEventListener('ended', () => {
                     this.country.classList.remove('voice-playing')
                 })
+            }
+        })
+    }
+    // when user wants to leave the country, give him/her a souvenir
+    giveSouvenir() {
+        this.iconsElement.addEventListener('mouseover', () => {
+            if (!this.souvenirAudio.classList.contains('played')) {
+                this.souvenirAudio.play()
+                this.souvenirAudio.classList.add('played')
+                this.souvenir.style.transition = 'all 1s ease-out'
+                this.souvenir.style.transform = 'translateY(580px)'
             }
         })
     }
