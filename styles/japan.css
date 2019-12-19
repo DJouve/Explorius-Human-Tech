@@ -5,7 +5,6 @@ body
     width: 100vw;
     height:100vh;
     position: relative;
-    overflow: hidden;
     background-color: lightblue;
 }
 
@@ -32,8 +31,9 @@ body
 /* Page */
 .country
 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     z-index: -15;
 }
 
@@ -265,7 +265,7 @@ img.background-intro-image
 /** responsive tablet**/
 @media screen and (max-width:1024px){
 
-    body{
+    .country{
         width: 100vw;
         height: 100vh;
         overflow: hidden;
