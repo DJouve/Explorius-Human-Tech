@@ -64,6 +64,7 @@
     color:black;
     font-family: 'Montserrat', sans-serif;
     font-size:1em;
+    transition: all 0.3s ease-in;
 }
 
 .planisphere-country{
@@ -74,11 +75,15 @@
     align-items: center;
 }
 
+a:hover .planisphere-country h2{
+    transform: scale(1.2);
+}
+
 .planisphere-russia{
     height: 23%;
     width: 23%;   
     top:20%;
-    right: 20%;    
+    right: 22%;    
 }
 
 .planisphere-japan{
@@ -112,8 +117,8 @@
 .planisphere-kenya{
     height: 7%;
     width: 5%;
-    top:55%;
-    left:48%;
+    top:59%;
+    left:52%;
 }
 
 .planisphere-scotland{
@@ -121,4 +126,22 @@
     width: 5%;
     top:35%;
     left:46%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+    .planisphere-japan{
+        right: 10%;
+    }
+    .planisphere-india{
+        right: 25%;
+    }
+    .planisphere-russia{
+        right: 10%;    
+    }
+    .planisphere-mexico{
+        left: 18%;
+    }
+    .planisphere-kenya{
+        left:57%;
+    }
 }
