@@ -34,8 +34,6 @@ body
 }
 
 
-
-
 /*
 *Feature Nessie*
 */
@@ -44,36 +42,156 @@ body
     position: absolute;
     height:30%;
     width: 30%;
-    left: 30%;
+    right: 25%;
     top: 50%;
     z-index:10;
+}
+
+.nessie-container.nessie-anim{
     animation: nessie 8s;
     animation-iteration-count: infinite;
+}
+
+.nessie-container.nessie-not-anim{
+    top: 18%;
 }
 
 @keyframes nessie
 {
     0%   {transform: translateY(0); opacity:0} /*hide*/
-    25%  {transform: translateY(-200px); opacity:1} /*pop*/
+    25%  {transform: translateY(-195px); opacity:1} /*pop*/
     35%  {transform: translateY(0); opacity:0} /*hide*/
-    55%  {transform: translateY(-200px); opacity:1} /*pop*/
+    55%  {transform: translateY(-195px); opacity:1} /*pop*/
     70%  {transform: translateY(0); opacity:0} /*hide*/
-    85%  {transform: translateY(-200px); opacity:1} /*pop*/
+    85%  {transform: translateY(-195px); opacity:1} /*pop*/
     100% {transform: translateY(0); opacity:0} /*hide*/
 }
+
+.hide-nessie{
+    position: absolute;
+    height:40%;
+    width: 30%;
+    right: 25%;
+    background-color: #B3E2CE;
+    top: 40%;
+    z-index:10;
+}
+
+/*
+*Style of the pop up messages*
+*/
+
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.background-pop-up
+{
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    left: 0;
+    bottom: -10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;
+    z-index: 15;
+}
+
+.container-pop-up
+{
+    position: absolute;
+    height: 80%;
+    width: 35%;
+    top: calc(50% - 40%);
+    left: calc(50% - 35%/2);
+}
+
+.background-pop-up .container-pop-up .content-pop-up
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    top: calc(50% - 50%);
+    left: calc(50% - 50%);
+    background-color: rgb(251, 251, 251);
+    border-radius: 10px;
+}
+
+.background-pop-up .content-pop-up img
+{
+    height: auto;
+    width: 200px;
+}
+
+p
+{
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin: 0px 30px 0px 30px;
+    text-align: center;
+}
+
+a.primary-button
+{
+    text-decoration: none;
+    width: 170px;
+    height: 25px;
+    padding: 15px;
+    background-color: rgb(119, 213, 219);
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
 
 /*
 *Style for SVG elements*
 */
 
-.background-scotland
+.foreground
 {
     position: absolute;
-    left: -5%;
-    top: 30%;
-    /* right: 0; */
-    height: 110%;
-    width: 110%;
+    width:100%;
+    height: auto;
+    left:0;
+    bottom:-30%;
+    z-index:12;
+}
+
+.small-hill{
+    position: absolute;
+    width:20%;
+    height: 20%;
+    right: 0;
+    top:20%;
+    z-index:9;
+}
+
+.water{
+    position: absolute;
+    width:100%;
+    height: auto;
+    left:0;
+    top:40%;
+    z-index:8;
+}
+
+.hill{
+    position: absolute;
+    top: 15%;
+    left:10%;
+    height: 40%;
+    width: 40%;
+    z-index:10;
 }
 
 .animal-scotland
@@ -81,8 +199,9 @@ body
     position: absolute;
     height: 20%;
     width: 15%;
-    right: 10%;
+    right: 5%;
     top: 55%;
+    z-index: 13;
 }
 
 .food-scotland
@@ -92,15 +211,17 @@ body
     width: 5%;
     right: 35%;
     top: 90%;
+    z-index: 13;
 }
 
 .castle-scotland
 {
     position: absolute;
-    height: 20%;
-    width: 10%;
-    top: 40%;
-    right: 50%;
+    height: 30%;
+    width: 30%;
+    top: -10%;
+    left: 30%;
+    z-index: 13;
 }
 
 .child-in-scotland
@@ -109,7 +230,8 @@ body
     height: auto;
     width: 5%;
     top: 50%;
-    right: 30%;
+    left: 30%;
+    z-index: 13;
 }
 
 .souvenir-from-scotland
@@ -118,7 +240,8 @@ body
     height: 20%;
     width: 10%;
     top: -30%;
-    left: 25%;
+    left: 40%;
+    z-index: 13;
 }
 
 .activity-scotland
@@ -128,6 +251,7 @@ body
     width: 5%;
     top: 70%;
     left: 10%;
+    z-index: 13;
 }
 
 .element{

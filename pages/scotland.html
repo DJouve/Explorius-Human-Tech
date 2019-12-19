@@ -75,12 +75,34 @@
     </div>
   </div>
   <!-- Feature -->
-  <div class="nessie-container js-nessie-container">
+  <div class="nessie-container nessie-anim js-nessie-container">
     <img src="../assets/img/scotland/scotland-nessie.svg" alt="">
+  </div>
+  <div class="hide-nessie"></div>
+  <!-- Pop up -->
+  <div class="background-pop-up hidden js-pop-up">
+    <div class="container-pop-up">
+      <div class="content-pop-up">
+        <img src="../assets/img/india/congrats-message.svg" alt="">
+        <p>Tu as capturé le monstre du Loch Ness !</p>
+        <a class="primary-button js-button" href="#" title="">D'accord, merci !</a>
+      </div>
+    </div>
   </div>
   <!-- Scotland page -->
   <div class="js-country">
-    <div class="background-scotland"> <img src="../assets/img/scotland/background-scotland.svg" alt=""> </div>
+    <!-- Landscape -->
+    <div class="foreground"> <img src="../assets/img/scotland/scotland-foreground.svg" alt=""> </div>
+    <div class="water"> <img src="../assets/img/scotland/scotland-water.svg" alt=""> </div>
+    <div class="small-hill"> <img src="../assets/img/scotland/scotland-small-hill.svg" alt=""> </div>
+    <div class="hill">
+      <img src="../assets/img/scotland/scotland-hill.svg" alt="">
+      <!-- Monument -->
+      <div class="castle-scotland element js-monument">
+        <img src="../assets/img/scotland/scotland-monument.svg" alt="">
+        <audio class="js-monument-audio" src="../assets/audio/scotland/scotland-monument.mp3"></audio>
+      </div>
+    </div>
     <!-- Animal -->
     <div class="animal-scotland element js-animal">
       <img src="../assets/img/scotland/animal-scotland.svg" alt="">
@@ -90,11 +112,6 @@
     <div class="food-scotland element js-food">
       <img src="../assets/img/scotland/food-scotland.svg" alt="">
       <audio class="js-food-audio" src="../assets/audio/scotland/scotland-food.mp3"></audio>
-    </div>
-    <!-- Monument -->
-    <div class="castle-scotland element js-monument">
-      <img src="../assets/img/scotland/monument-scotland.svg" alt="">
-      <audio class="js-monument-audio" src="../assets/audio/scotland/scotland-monument.mp3"></audio>
     </div>
     <!-- Child -->
     <div class="child-in-scotland element js-child">
@@ -106,11 +123,11 @@
       <img src="../assets/img/scotland/souvenir-scotland.svg" alt="">
       <audio class="js-souvenir-audio" src="../assets/audio/scotland/scotland-souvenir.mp3"></audio>
     </div>
-  </div>
-  <!-- Activity -->
-  <div class="activity-scotland element js-activity">
-    <img src="../assets/img/scotland/activity-scotland.svg" alt="">
-    <audio class="js-activity-audio" src="../assets/audio/scotland/scotland-activity.mp3"></audio>
+    <!-- Activity -->
+    <div class="activity-scotland element js-activity">
+      <img src="../assets/img/scotland/activity-scotland.svg" alt="">
+      <audio class="js-activity-audio" src="../assets/audio/scotland/scotland-activity.mp3"></audio>
+    </div>
   </div>
   </div>
   <script src="../scripts/voices.js"></script>
