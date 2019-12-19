@@ -198,9 +198,11 @@ class Speak {
     }
     playMusic() {
         const music = document.querySelector('.js-music')
+        console.log(music)
         const musicStarter = document.querySelector('.js-music-start')
         music.volume = 0.1
         musicStarter.addEventListener('click', () => {
+            console.log('music devrait marcher')
             music.play()
             // if (this.country.contains('voice-playing')) {
             //     music.volume = 0.1
