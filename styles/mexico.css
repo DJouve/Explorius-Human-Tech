@@ -132,11 +132,6 @@ img{
     height:150%;
 }
 
-@media screen and (max-width:1024px){
-    .background{
-        top: 30%;
-    }
-  }
 
 .monument{
     width: 60%;
@@ -203,7 +198,7 @@ img{
 /** responsive tablet**/
 @media screen and (max-width:1024px){
     .background{
-        top: 12%;
+        top:-10%;
     }
     .monument{
         top:40%;
