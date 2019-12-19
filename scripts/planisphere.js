@@ -6,17 +6,26 @@ class Planisphere {
     constructor() {
         this.mapIcon = document.querySelector('.js-map')
         this.planisphereContainer = document.querySelector('.planisphere-container')
-        this.egypt = this.planisphereContainer.querySelector('.js-planisphere-egypt')
-        this.india = this.planisphereContainer.querySelector('.js-planisphere-india')
-        this.japan = this.planisphereContainer.querySelector('.js-planisphere-japan')
-        this.kenya = this.planisphereContainer.querySelector('.js-planisphere-kenya')
-        this.mexico = this.planisphereContainer.querySelector('.js-planisphere-mexico')
-        this.russia = this.planisphereContainer.querySelector('.js-planisphere-russia')
-        this.scotland = this.planisphereContainer.querySelector('.js-planisphere-scotland')
+        this.planisphereImg = this.planisphereContainer.querySelector('.planisphere')
+        this.egypt = this.planisphereContainer.querySelector('.planisphere-egypt')
+        this.india = this.planisphereContainer.querySelector('.planisphere-india')
+        this.japan = this.planisphereContainer.querySelector('.planisphere-japan')
+        this.kenya = this.planisphereContainer.querySelector('.planisphere-kenya')
+        this.mexico = this.planisphereContainer.querySelector('.planisphere-mexico')
+        this.russia = this.planisphereContainer.querySelector('.planisphere-russia')
+        this.scotland = this.planisphereContainer.querySelector('.planisphere-scotland')
         this.closeIcon = this.planisphereContainer.querySelector('.js-planisphere-x')
         this.init()
     }
     init() {
+        // japon is blocked
+        this.japan.classList.add('hidden')
+        // if user said namaste, japon unblocked
+        const namasteSaid = sessionStorage.getItem('namaste')
+        if (namasteSaid == "ok") {
+            this.planisphereImg.setAttribute('src', '../assets/img/planisphere2.svg')
+            this.japan.classList.remove('hidden')
+        }
         // open planisphere
         this.mapIcon.addEventListener('click', () => {
             this.planisphereContainer.classList.remove('hidden')
