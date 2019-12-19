@@ -1,12 +1,12 @@
 body
 {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
     padding: 0;
-    z-index: -15;
+    margin:0;
+    width: 100vw;
+    height:100vh;
     position: relative;
     overflow: hidden;
+    background-color: lightblue;
 }
 
 /* Icons */
@@ -29,20 +29,12 @@ body
 }
 
 
-
+/* Page */
 .country
 {
-    background-color: lightblue;
-    width: 100vw;
-    height: 100vh;
-    opacity: 1;
-    position: absolute;
-    top:0;
-    left:0;
-    padding: 0;
-    margin: 0;
-    z-index: 0;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -15;
 }
 
 .element
@@ -53,10 +45,10 @@ body
 
 .background
 {
-    top: 0%;
-    left: -1vw;
-    width: 102vw;
-    height: 100vh;
+    top: 0;
+    left: -1%;
+    width: 102%;
+    height: 100%;
     z-index: -10;
 }
 
@@ -179,9 +171,10 @@ body
     position: absolute;
     top: 0;
     left: 0;
-    width: 92%;
-    height: 90%;
-    will-change: all;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    z-index: 10;
 }
 .flower
 {
@@ -271,6 +264,13 @@ img.background-intro-image
 
 /** responsive tablet**/
 @media screen and (max-width:1024px){
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
     .background{
         top: 25%;
     }
