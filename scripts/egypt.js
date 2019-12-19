@@ -29,7 +29,10 @@ for(let i=0; i<featureImgContent.length; i++)
                 featureImg.removeAttribute("src")
                 count++
                 random = Math.floor(Math.random()*8)
-                featureImg.setAttribute("src", featureImgContent[random])
+                setTimeout(() =>
+                {
+                    featureImg.setAttribute("src", featureImgContent[random])
+                }, 150)
                 console.log(count)
             }
         }
