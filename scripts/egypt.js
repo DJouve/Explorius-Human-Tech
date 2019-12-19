@@ -1,17 +1,3 @@
-
-const portal = document.querySelector(".portal")
-const bgPortal = document.querySelector(".portal-background")
-
-setTimeout(() =>
-{
-    portal.classList.add("animation-intro")
-    setTimeout(() =>
-    {
-        bgPortal.classList.add("display-none")
-        portal.classList.add("display-none")
-    }, 1990)
-}, 750)
-
 // Feature
 
 const feature = document.querySelector(".feature-background")
@@ -21,9 +7,7 @@ const featureImgContent = ["../assets/img/hieroglyphe/F.svg","../assets/img/hier
 const showPopUp = document.querySelector(".background-pop-up")
 const textFailure = document.querySelector(".content-pop-up.wrong-answer")
 const textSucces = document.querySelector(".content-pop-up.correct-answer-final")
-const textContinue = document.querySelector(".content-pop-up.correct-answer")
 const succes = document.querySelector(".succes")
-const again = document.querySelector(".again")
 const reset = document.querySelector(".reset")
 let count = 0
 let random = Math.floor(Math.random()*8)
@@ -42,10 +26,10 @@ for(let i=0; i<featureImgContent.length; i++)
             }
             else
             {
-                showPopUp.classList.remove("js-hidden")
-                textContinue.classList.remove("js-hidden")
                 featureImg.removeAttribute("src")
                 count++
+                random = Math.floor(Math.random()*8)
+                featureImg.setAttribute("src", featureImgContent[random])
                 console.log(count)
             }
         }
@@ -60,13 +44,6 @@ succes.addEventListener('click', () =>
 {
     showPopUp.classList.add("js-hidden")
     feature.classList.add("js-hidden")
-})
-again.addEventListener('click', () =>
-{
-    showPopUp.classList.add("js-hidden")
-    random = Math.floor(Math.random()*8)
-    featureImg.setAttribute("src", featureImgContent[random])
-    textContinue.classList.add("js-hidden")
 })
 reset.addEventListener('click', () =>
 {
