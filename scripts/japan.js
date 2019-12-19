@@ -24,7 +24,7 @@ for (let i = 0; i < flowers.length; i++) {
             flowers[i].classList.add("display-none")
         }, 1500)
     })
-    flowers[i].addEventListener("touchstart", () => {
+    flowers[i].addEventListener("touchmove", () => {
         flowers[i].classList.add("animation-flower")
         setTimeout(() => {
             flowers[i].classList.add("display-none")
