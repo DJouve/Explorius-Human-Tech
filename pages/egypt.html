@@ -13,10 +13,11 @@
 </head>
 
 <body>
+  <audio class="js-music js-music-egypt" src="../assets/audio/music/egypt-music.mp3"></audio>
   <!-- Icons -->
   <div class="icons-container">
     <!-- Planisphere icon -->
-      <img class="map-icon element js-map" src="../assets/img/map-icon.svg" alt="map">
+    <img class="map-icon element js-map" src="../assets/img/map-icon.svg" alt="map">
     <!-- Bedroom icon -->
     <a href="bedroom.html">
       <img class="element bedroom-icon" src="../assets/img/home-icon.svg" alt="home">
@@ -97,7 +98,7 @@
       <audio class="js-activity-audio" src="../assets/audio/egypt/egypt-activity.mp3"></audio>
     </div>
   </div>
-  
+
   <!-- Feature-->
 
   <div class="feature-background">
@@ -120,14 +121,14 @@
       </div>
     </div>
     <!-- All elements for the pop-up message (needed for the feature) -->
-  <div class="background-pop-up js-hidden">
+    <div class="background-pop-up js-hidden">
       <div class="container-pop-up">
         <!--Content of the pop-up if the user solved 3 puzzles-->
         <div class="content-pop-up correct-answer-final js-hidden">
           <img src="../assets/img/india/congrats-message.svg" alt="">
           <p>Tu as bien retrouvé les 3 hiérogyphes ! À toi de jouer et découvrir l'Egypte !
           </p>
-          <a class="primary-button succes" href="#" title="">D'accord, merci !</a>
+          <a class="primary-button succes js-music-start" href="#" title="">D'accord, merci !</a>
         </div>
         <div class="content-pop-up wrong-answer js-hidden">
           <img src="../assets/img/india/fail-message.svg" alt="">

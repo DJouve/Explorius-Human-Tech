@@ -24,6 +24,7 @@ class Speak {
         this.activityInfo()
         this.foodInfo()
         this.giveSouvenir()
+        this.playMusic()
     }
     // welcome the user
     welcome() {
@@ -193,6 +194,17 @@ class Speak {
                     })
                 })
             }
+        })
+    }
+    playMusic() {
+        const music = document.querySelector('.js-music')
+        const musicStarter = document.querySelector('.js-music-start')
+        music.volume = 0.1
+        musicStarter.addEventListener('click', () => {
+            music.play()
+            // if (this.country.contains('voice-playing')) {
+            //     music.volume = 0.1
+            // }
         })
     }
 }
