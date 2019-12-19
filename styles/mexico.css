@@ -172,6 +172,14 @@ img{
     right: 10%;
 }
 
+.souvenir{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: -20%;
+    left:45%;
+}
+
 
 /** responsive tablet**/
 @media screen and (max-width:1024px){

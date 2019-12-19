@@ -258,12 +258,12 @@ img{
     right:5%;
 }
 
-.globe-container{
-    height: 7%;
-    width: auto;
+.souvenir{
+    height: 10%;
+    width: 10%;
     position: absolute;
-    bottom: 2%;
-    right:1%;
+    top: -20%;
+    left:45%;
 }
 
 

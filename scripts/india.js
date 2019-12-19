@@ -16,7 +16,7 @@ if (annyang)
   SpeechKITT.annyang()
 
   // Define a stylesheet for KITT to use
-  SpeechKITT.setStylesheet('https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/1.0.0/themes/flat-amethyst.css')
+  SpeechKITT.setStylesheet('https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/1.0.0/themes/flat-orange.css')
 
   //Instructional text
   SpeechKITT.setInstructionsText('Rapproche toi du micro et dis "Namasté"')

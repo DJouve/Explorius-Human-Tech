@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/japan.css">
   <link rel="stylesheet" href="../styles/planisphere.css">
+  <title>Explorius</title>
 </head>
 
 <body>
@@ -71,29 +72,49 @@
     </div>
   </div>
   <!-- Page -->
-  <div class="country">
-    <div class="element background"> <img class="img-background" src="../assets/img/japan/japan-bg.svg" alt="#"> </div>
-    <div class="element character img-js"> <img class="img-character" src="../assets/img/japan/japan-chara.svg" alt="#">
+  <div class="country js-country">
+    <div class="element background">
+      <img class="img-background" src="../assets/img/japan/japan-bg.svg" alt="#">
     </div>
-    <div class="element monument img-js"> <img class="img-monument" src="../assets/img/japan/japan-monument.svg"
-        alt="#"> </div>
-    <div class="element animal img-js"> <img class="img-animal" src="../assets/img/japan/japan-animal.svg" alt="#">
+    <div class="element character img-js js-child">
+      <img class="img-character" src="../assets/img/japan/japan-chara.svg" alt="#">
+      <audio class="js-welcome-audio" src="../assets/audio/japan/japan-welcome.mp3"></audio>
     </div>
-    <div class="element object img-js"> <img class="img-object" src="../assets/img/japan/japan-obj.svg" alt="#"> </div>
-    <div class="element food img-js"> <img class="img-food" src="../assets/img/japan/japan-food.svg" alt="#"></div>
-    <div class="element activity img-js"> <img class="img-activity" src="../assets/img/japan/japan-act.svg" alt="#">
+    <div class="element monument img-js js-monument">
+      <img class="img-monument" src="../assets/img/japan/japan-monument.svg" alt="#">
+      <audio class="js-monument-audio" src="../assets/audio/japan/japan-monument.mp3"></audio>
+    </div>
+    <div class="element animal img-js js-animal">
+      <img class="img-animal" src="../assets/img/japan/japan-animal.svg" alt="#">
+      <audio class="js-animal-audio" src="../assets/audio/japan/japan-animal.mp3"></audio>
+    </div>
+    <div class="element object img-js js-souvenir">
+      <img class="img-object" src="../assets/img/japan/katana.svg" alt="#">
+      <audio class="js-souvenir-audio" src="../assets/audio/japan/japan-souvenir.mp3"></audio>
+    </div>
+    <div class="element food img-js js-food">
+      <img class="img-food" src="../assets/img/japan/japan-food.svg" alt="#">
+      <audio class="js-food-audio" src="../assets/audio/japan/japan-food.mp3"></audio>
+    </div>
+    <div class="element activity img-js js-activity">
+      <img class="img-activity" src="../assets/img/japan/japan-act.svg" alt="#">
+      <audio class="js-activity-audio" src="../assets/audio/japan/japan-activity.mp3"></audio>
     </div>
     <div class="flower-js">
     </div>
   </div>
   <!-- Portal introduction -->
   <div class="intro">
-      <img src="../assets/img/egypt/egypt-bg.svg" class="background-intro-image" alt="#">
+      <!-- <img src="../assets/img/egypt/egypt-bg.svg" class="background-intro-image" alt="#">
       <div class="portal">
         <img src="../assets/img/portal.svg" classalt="">
         <p class="background-intro">Bienvenue en Egypte</p>
       </div>
-    </div>
+    </div> -->
+    <p class="background-intro">Bienvenue au Japon</p>
+    <img src="../assets/img/japan/japan-bg.svg" class="background-intro-image" alt="#">
+  </div>
+  <script src="../scripts/voices.js"></script>
   <script src="../scripts/planisphere.js"></script>
   <script src="../scripts/japan.js"></script>
 </body>
