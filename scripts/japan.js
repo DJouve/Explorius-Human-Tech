@@ -1,22 +1,27 @@
-const flowersContainer = document.querySelector(".flower-js")
-// const flowerContainerLeft = document.querySelector(".container-left")
-// const flowerContainerTop = document.querySelector(".container-top")
-// const flowerContainerRight = document.querySelector(".container-right")
-// const flowerContainerBottom = document.querySelector(".container-bottom")
+// Pop up
+const popUp = document.querySelector('.js-pop-up')
+const button = document.querySelector('.js-button')
 
-const container = document.querySelector(".container-flower")
-for (let j = 0; j < 100; j++) {
+button.addEventListener('click', () => {
+    popUp.classList.add('hidden')
+})
+
+// Flowers
+
+const country = document.querySelector(".js-country")
+const flowers = new Array()
+const animatedflowers = new Array()
+
+for (let j = 0; j < 120; j++) {
     let flower = document.createElement("img")
-    let flowerdiv = document.createElement("div")
-    flower.classList.add("exist")
-    flowerdiv.appendChild(flower)
-    flowersContainer.appendChild(flowerdiv)
     flower.setAttribute("src", "../assets/img/sakura.svg")
-    flowerdiv.classList.add("flower")
-    flowerdiv.style.left = Math.floor(Math.random() * 100) + "%"
-    flowerdiv.style.top = Math.floor(Math.random() * 100) + "%"
+    flower.style.left = Math.floor(Math.random() * 100) + "%"
+    flower.style.top = Math.floor(Math.random() * 100) + "%"
+    flower.classList.add('flower')
+    country.appendChild(flower)
+    flowers.push(flower)
 }
-const flowers = document.querySelectorAll(".flower")
+
 for (let i = 0; i < flowers.length; i++) {
     flowers[i].addEventListener("mouseover", () => {
         flowers[i].classList.add("animation-flower")

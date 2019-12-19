@@ -31,6 +31,79 @@ body
     width: 30%;
 }
 
+/*
+*Pop up*
+*/
+
+.hidden{
+    display:none;
+}
+
+.background-pop-up
+{
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    left: 0;
+    bottom: -10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;
+    z-index: 15;
+}
+
+.container-pop-up
+{
+    position: absolute;
+    height: 80%;
+    width: 35%;
+    top: calc(45% - 40%);
+    left: calc(50% - 35%/2);
+}
+
+.background-pop-up .container-pop-up .content-pop-up
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    top: calc(50% - 50%);
+    left: calc(50% - 50%);
+    background-color: rgb(251, 251, 251);
+    border-radius: 10px;
+}
+
+.background-pop-up .content-pop-up img
+{
+    height: auto;
+    width: 200px;
+}
+
+p
+{
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin: 0px 30px 0px 30px;
+    text-align: center;
+}
+
+a.primary-button
+{
+    text-decoration: none;
+    width: 170px;
+    height: 25px;
+    padding: 15px;
+    background-color: rgb(119, 213, 219);
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
 
 /* Page */
 .country
@@ -113,7 +186,7 @@ body
 
 /* Text CSS */
 
-.text
+/* .text
 {
     background-color: #fff;
     border-radius: 5px;
@@ -166,11 +239,11 @@ body
 .visible-dct
 {
     opacity: 1;
-}
+} */
 
 /* Flower */
 
-.flower-js
+/* .flower-js
 {
     position: absolute;
     top: 0;
@@ -178,16 +251,15 @@ body
     width: 100vw;
     height: 100vh;
     will-change: transform;
-    z-index: 10;
+    z-index: 3;
     overflow: hidden;
-    pointer-events: none;
-}
+} */
 
 .flower
 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 18%;
+    height: 18%;
     z-index: 10;
 }
 .animation-flower
@@ -201,22 +273,13 @@ body
     100%{ left: 2000px;  transform: rotate(550deg);}
 }
 
-.exist
-{
-    text-align: center;
-}
-.display
-{
-    display: block;
-}
 .display-none
 {
     display: none;
 }
 
 
-
-/* Intro de page */
+/* Intro de page
 .intro 
 {
     width: 100%;
@@ -267,11 +330,10 @@ img.background-intro-image
     0% {opacity: 1;}
     90% {opacity: 1;}
     100% {opacity: 0;}
-}
+} */
 
 /** responsive tablet**/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
-
     .country{
         width: 100vw;
         height: 100vh;
