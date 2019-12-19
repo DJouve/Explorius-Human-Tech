@@ -1,3 +1,4 @@
+let allText = []
 // display souvenirs and postcards from visited countries 
 class Visited {
     constructor() {
@@ -17,7 +18,15 @@ class Visited {
         this.pcMexico = document.querySelector('.js-postcard-mexico')
         this.pcRussia = document.querySelector('.js-postcard-russia')
         this.pcScotland = document.querySelector('.js-postcard-scotland')
+        // Get elements to close pop up postcard
+        this.closeIcon = document.querySelector('.js-postcard-x')
+        this.popUpPostcard = document.querySelector('.background-pop-up-postcard')
         this.init()
+        this.saveTextForPostcard()
+        this.initTextPostcard()
+        this.onClickOfSaveButtonPostcard()
+        this.closePostcardPopUp()
+        this.openPostcardPopUp()
     }
     // if country visited, display souvenir and country
     init() {
@@ -64,5 +73,61 @@ class Visited {
             this.pcScotland.classList.remove('hidden')
         }
     }
+
+    saveTextForPostcard()
+    {
+        const saveTextInPostCard = document.querySelectorAll('.test')
+        console.log(saveTextInPostCard)
+        allText = new Array ()
+        
+        for (let i = 0; i < saveTextInPostCard.length; i++)
+        {
+            allText.push(saveTextInPostCard[i].innerHTML)
+        }
+        console.log(allText)
+        let temp = JSON.stringify(allText)
+        sessionStorage.setItem('sessionTextPostCard', temp)
+    }
+
+    initTextPostcard()
+    {
+        if(sessionStorage.getItem('sessionTextPostCard')!=null){
+            allText = sessionStorage.getItem('sessionTextPostCard')
+            allText = JSON.parse(allText)
+        } 
+    }
+
+    onClickOfSaveButtonPostcard()
+    {
+        const buttonPostCard = document.querySelector('.primary-button')
+        console.log(buttonPostCard)
+        const changeColorPlaceholder = document.querySelectorAll('.test')
+
+        buttonPostCard.addEventListener('click', () =>
+        {
+            this.saveTextForPostcard()
+            for( let i = 0; i < changeColorPlaceholder.length; i++)
+            {
+                changeColorPlaceholder[i].style.backgroundColor = 'rgb(248, 222, 193)'
+            }
+        })
+    }
+
+    closePostcardPopUp()
+    {
+        this.closeIcon.addEventListener('click', () =>{
+            this.popUpPostcard.classList.add('hidden')
+        })
+    }
+
+    openPostcardPopUp()
+    {
+        const containerPostcards = document.querySelector('.postcards-container')
+
+        containerPostcards.addEventListener('click', () =>{
+            this.popUpPostcard.classList.remove('hidden')   
+        })
+    }
+
 }
 const visit = new Visited()

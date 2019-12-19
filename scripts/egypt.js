@@ -1,16 +1,15 @@
 
-const imgBgIntro = document.querySelector(".background-intro-image")
-const bgIntro = document.querySelector(".intro")
+const portal = document.querySelector(".portal")
+const bgPortal = document.querySelector(".portal-background")
 
-imgBgIntro.addEventListener("click", () =>
+setTimeout(() =>
 {
-    imgBgIntro.classList.add("animation-intro")
-    bgIntro.classList.add("subanimation-intro")
+    portal.classList.add("animation-intro")
     setTimeout(() =>
     {
-        bgIntro.classList.add("display-none")
+        bgPortal.classList.add("display-none")
     }, 1990)
-})
+}, 750)
 
 // Feature
 

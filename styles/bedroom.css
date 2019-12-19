@@ -92,6 +92,7 @@ body{
 
 .hidden{
     opacity:0;
+    pointer-events: none;
 }
 
 .souvenir img{
@@ -213,3 +214,128 @@ body{
     top: 50%;
     transform: rotateZ(-10deg);
  }
+
+/*Pop up on click of the postcard*/
+
+.postcard-x-container{
+    width:4%;
+    height:4%;
+    position: absolute;
+    top: 2%;
+    right:1%;
+    z-index:80;
+}
+
+.postcard-x{
+    height: 100%;
+    width: 100%;
+}
+
+.postcard-x-container:hover{
+    cursor: pointer;
+}
+
+.background-pop-up-postcard
+{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;
+    z-index: 50;
+}
+
+.container-postcard
+{
+    position: absolute;
+    height: 65%;
+    width: 50%;
+    top: calc(50% - 65%/2);
+    left: calc(50% - 50%/2);
+    background-color: rgb(248, 222, 193);
+}
+
+h2
+{
+    text-align: center;
+    font-family: 'Fira sans';
+    margin: 10px;
+}
+
+.content-postcard
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 85%;
+    width: 100%;
+    margin: 0px 30px;
+}
+
+.container-text-postcard
+{
+    width: 80%;
+}
+
+p
+{
+    margin: 10px;
+}
+
+p, .test
+{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.container-stamp
+{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    height: auto;
+    width: 15%;
+
+}
+
+.test {
+    width: 400px;
+    height: 15px;
+    background:  rgb(253, 240, 225);
+    padding: 15px;
+    outline: none;
+}
+
+.test.person-name
+{
+    width: 140px;
+    height: 20px;
+}
+
+.test[placeholder]:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: #555; 
+}
+
+a.primary-button
+{
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    text-decoration: none;
+    width: 170px;
+    height: 20px;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgb(119, 213, 219);
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
