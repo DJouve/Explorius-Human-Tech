@@ -92,6 +92,7 @@ body{
 
 .hidden{
     opacity:0;
+    pointer-events: none;
 }
 
 .souvenir img{
@@ -216,6 +217,24 @@ body{
 
 /*Pop up on click of the postcard*/
 
+.postcard-x-container{
+    width:4%;
+    height:4%;
+    position: absolute;
+    top: 2%;
+    right:1%;
+    z-index:80;
+}
+
+.postcard-x{
+    height: 100%;
+    width: 100%;
+}
+
+.postcard-x-container:hover{
+    cursor: pointer;
+}
+
 .background-pop-up-postcard
 {
     position: absolute;
@@ -231,9 +250,9 @@ body{
 .container-postcard
 {
     position: absolute;
-    height: 60%;
+    height: 65%;
     width: 50%;
-    top: calc(50% - 60%/2);
+    top: calc(50% - 65%/2);
     left: calc(50% - 50%/2);
     background-color: rgb(248, 222, 193);
 }
@@ -242,18 +261,22 @@ h2
 {
     text-align: center;
     font-family: 'Fira sans';
-    /* font-size: 22px; */
+    margin: 10px;
 }
 
 .content-postcard
 {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
-    height: 100%;
+    height: 85%;
     width: 100%;
-    margin: 30px;
+    margin: 0px 30px;
+}
+
+.container-text-postcard
+{
+    width: 80%;
 }
 
 p
@@ -279,10 +302,10 @@ p, .test
 
 .test {
     width: 400px;
-    height: 30px;
+    height: 15px;
     background:  rgb(253, 240, 225);
-    /* border: 1px solid #ddd; */
-    padding: 10px;
+    padding: 15px;
+    outline: none;
 }
 
 .test.person-name
@@ -299,9 +322,13 @@ p, .test
 
 a.primary-button
 {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
     text-decoration: none;
     width: 170px;
     height: 20px;
+    margin: 5px;
     padding: 15px;
     background-color: rgb(119, 213, 219);
     border-radius: 5px;
