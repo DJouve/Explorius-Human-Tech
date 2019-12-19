@@ -1,14 +1,15 @@
 
-const imgBgIntro = document.querySelector(".background-intro-image")
-const bgIntro = document.querySelector(".intro")
+const portal = document.querySelector(".portal")
+const bgPortal = document.querySelector(".portal-background")
+const portalDescription = document.querySelector(".portal-description")
 
-imgBgIntro.addEventListener("click", () =>
+portal.addEventListener("click", () =>
 {
-    imgBgIntro.classList.add("animation-intro")
-    bgIntro.classList.add("subanimation-intro")
+    portal.classList.add("animation-intro")
+    portalDescription.classList.add("js-hidden")
     setTimeout(() =>
     {
-        bgIntro.classList.add("display-none")
+        bgPortal.classList.add("display-none")
     }, 1990)
 })
 
