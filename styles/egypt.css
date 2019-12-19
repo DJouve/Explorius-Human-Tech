@@ -343,38 +343,30 @@ a.primary-button
     height: 100%;
     top: 0;
     left: 0;
+    background: linear-gradient(rgb(33, 134, 218), #C3FCF1);
 }
 .portal-img-background
 {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .portal
 {
     position: absolute;
-    width: 250%;
+    width: 200vw;
     height: auto;
-    top: -147%;
-    left: -75%;
+    transform-origin: center center;
+    left: -50vw;
+    top: -100vh;
+
 }
 .anim-waiting{
     animation: anim-waiting 6s linear infinite;
-    transform-origin: center center;
+
 }
 @keyframes anim-waiting{
     0% {transform: rotate(0);}
     100% { transform: rotate(-360deg);}
-}
-.portal-background p
-{
-    font-family: "Montserrat";
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    width: 100%;
-    bottom: 5%;
-    text-align: center;
-    transition: all 1s;
 }
 /* .intro 
 {
@@ -411,12 +403,12 @@ img.background-intro-image
 */
 .animation-intro
 {
-    animation: animation-intro ease 2s;
+    animation: animation-intro ease-out 2s;
 }
 
 @keyframes animation-intro{
     0% {transform: scale(1.0) rotate(0deg);}
-    100% {transform: scale(1.5) rotate(-240deg);}
+    100% {transform: scale(9) rotate(-240deg);}
 }
 
 /** responsive tablet**/
@@ -451,6 +443,11 @@ img.background-intro-image
     }
 
     /* Portal */
+    .portal-img-background
+    {
+        position: absolute;
+        top: 20%;
+    }
     .portal
     {
         width: 300%;

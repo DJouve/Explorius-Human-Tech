@@ -1,17 +1,15 @@
 
 const portal = document.querySelector(".portal")
 const bgPortal = document.querySelector(".portal-background")
-const portalDescription = document.querySelector(".portal-description")
 
-portal.addEventListener("click", () =>
+setTimeout(() =>
 {
     portal.classList.add("animation-intro")
-    portalDescription.classList.add("js-hidden")
     setTimeout(() =>
     {
         bgPortal.classList.add("display-none")
     }, 1990)
-})
+}, 750)
 
 // Feature
 
