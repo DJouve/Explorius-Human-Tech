@@ -19,16 +19,17 @@ class Planisphere {
     }
     init() {
         // japon is blocked
-        this.japan.classList.add('hidden')
-        // if user said namaste, japon unblocked
-        const namasteSaid = sessionStorage.getItem('namaste')
-        if (namasteSaid == "ok") {
-            this.planisphereImg.setAttribute('src', '../assets/img/planisphere2.svg')
-            this.japan.classList.remove('hidden')
-        }
+        this.russia.classList.add('hidden')
         // open planisphere
         this.mapIcon.addEventListener('click', () => {
             this.planisphereContainer.classList.remove('hidden')
+            // if user said namaste, japon unblocked
+            const namasteSaid = sessionStorage.getItem('namaste')
+            console.log(sessionStorage)
+            if (namasteSaid == "ok") {
+                this.planisphereImg.setAttribute('src', '../assets/img/planisphere2.svg')
+                this.russia.classList.remove('hidden')
+            }
             // close planisphere
             this.closeIcon.addEventListener('click', () => {
                 this.planisphereContainer.classList.add('hidden')
