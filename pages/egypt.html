@@ -118,20 +118,29 @@
       </div>
       <div class="feature-right">
         <p class="feature-description">Reconnais-tu ce hiéroglyphe ?</p>
-        <img class="feature-img" src="" alt="">
+        <div class="feature-img">
+          <img class="feature-img-js" src="" alt="">
+        </div>
       </div>
     </div>
     <!-- All elements for the pop-up message (needed for the feature) -->
   <div class="background-pop-up js-hidden">
       <div class="container-pop-up">
-        <!--Content of the pop-up if the user said correctly "Namasté" -->
-        <div class="content-pop-up correct-answer js-hidden">
+        <!--Content of the pop-up if the user solved 3 puzzles-->
+        <div class="content-pop-up correct-answer-final js-hidden">
           <img src="../assets/img/india/congrats-message.svg" alt="">
-          <p>Tu as bien retrouvé le hiérogyphe ! A toi de jouer et découvrir l'Egypte !
+          <p>Tu as bien retrouvé les 3 hiérogyphes ! A toi de jouer et découvrir l'Egypte !
           </p>
           <a class="primary-button succes" href="#" title="">D'accord, merci !</a>
         </div>
-        <!--Content of the pop-up if the user didn't say correctly "Namasté" -->
+        <!--Content of the pop-up if the user solved less than 3 puzzles -->
+        <div class="content-pop-up correct-answer js-hidden">
+          <img src="../assets/img/india/congrats-message.svg" alt="">
+          <p>Tu as bien retrouvé le hiérogyphe ! Essayes d'en trouver un autre !
+          </p>
+          <a class="primary-button again" href="#" title="">C'est parti !</a>
+        </div>
+        <!--Content of the pop-up if the user didnt solve the puzzle-->
         <div class="content-pop-up wrong-answer js-hidden">
           <img src="../assets/img/india/fail-message.svg" alt="">
           <p>Il semblerait que tu n'ai pas sélectionné le bon hiéroglyphe</p>
@@ -150,9 +159,9 @@
   </div> -->
   <div class="portal-background">
     <img class="portal-img-background"src="../assets/img/egypt/egypt-bg.svg" alt="">
-    <div class="portal anim-waiting">
-      <img src="../assets/img/portal.svg" alt="">
-    </div>
+  </div>
+  <div class="portal anim-waiting">
+    <img src="../assets/img/portal.svg" alt="">
   </div>
 
   <script src="../scripts/voices.js"></script>
