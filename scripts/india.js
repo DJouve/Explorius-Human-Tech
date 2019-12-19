@@ -44,6 +44,7 @@ if (annyang)
     'Namasté' : function () {
       showPopUp.classList.remove('js-hidden')
       textForSuccess.classList.remove('js-hidden')
+      sessionStorage.setItem('namaste', 'ok')
     }
   }
 
