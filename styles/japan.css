@@ -180,7 +180,9 @@ body
     will-change: transform;
     z-index: 10;
     overflow: hidden;
+    pointer-events: none;
 }
+
 .flower
 {
     position: absolute;
