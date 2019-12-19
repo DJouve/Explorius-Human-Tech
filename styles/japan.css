@@ -289,13 +289,7 @@ a.primary-button
     position: absolute;
     top: 0;
     left: 0;
-}
-.portal
-{
-    position: absolute;
-    z-index: 21;
-    height: 100%;
-    width: 100%;
+    background: linear-gradient(#03224C, lightblue);
 }
 p.background-intro
 {
