@@ -1,3 +1,4 @@
+let allText = []
 // display souvenirs and postcards from visited countries 
 class Visited {
     constructor() {
@@ -18,6 +19,9 @@ class Visited {
         this.pcRussia = document.querySelector('.js-postcard-russia')
         this.pcScotland = document.querySelector('.js-postcard-scotland')
         this.init()
+        this.saveTextForPostCard()
+        this.initTextPostCard()
+        this.onClickOfSaveButtonPostCard()
     }
     // if country visited, display souvenir and country
     init() {
@@ -64,5 +68,45 @@ class Visited {
             this.pcScotland.classList.remove('hidden')
         }
     }
+
+    saveTextForPostCard()
+    {
+        const saveTextInPostCard = document.querySelectorAll('.test')
+        console.log(saveTextInPostCard)
+        allText = new Array ()
+        
+        for (let i = 0; i < saveTextInPostCard.length; i++)
+        {
+            allText.push(saveTextInPostCard[i].innerHTML)
+        }
+        console.log(allText)
+        let temp = JSON.stringify(allText)
+        sessionStorage.setItem('sessionTextPostCard', temp)
+    }
+
+    initTextPostCard()
+    {
+        if(sessionStorage.getItem('sessionTextPostCard')!=null){
+            allText = sessionStorage.getItem('sessionTextPostCard')
+            allText = JSON.parse(allText)
+        } 
+    }
+
+    onClickOfSaveButtonPostCard()
+    {
+        const buttonPostCard = document.querySelector('.primary-button')
+        console.log(buttonPostCard)
+        const changeColorPlaceholder = document.querySelectorAll('.test')
+
+        buttonPostCard.addEventListener('click', () =>
+        {
+            this.saveTextForPostCard()
+            for( let i = 0; i < changeColorPlaceholder.length; i++)
+            {
+                changeColorPlaceholder[i].style.backgroundColor = 'rgb(248, 222, 193)'
+            }
+        })
+    }
+
 }
 const visit = new Visited()
