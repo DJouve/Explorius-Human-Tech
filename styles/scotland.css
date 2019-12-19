@@ -251,6 +251,18 @@ a.primary-button
     z-index: 13;
 }
 
+.souvenir-rotate{
+    animation: object-spinning-animation 2s ease-in-out 1;
+}
+
+
+@keyframes object-spinning-animation
+{
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(-5deg);}
+    100%  {transform: rotate(1440deg);}
+}
+
 .activity-scotland
 {
     position: absolute;

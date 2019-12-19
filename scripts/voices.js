@@ -184,7 +184,14 @@ class Speak {
                 })
                 // make souvenir fall
                 this.souvenir.style.transition = 'all 1s ease-out'
-                this.souvenir.style.transform = 'translateY(580px)'
+                this.souvenir.style.top = '70%'
+                // make souvenir rotate
+                this.souvenir.addEventListener('mouseover', () => {
+                    this.souvenir.classList.add('souvenir-rotate')
+                    this.souvenir.addEventListener('animationend', () => {
+                        this.souvenir.classList.remove('souvenir-rotate')
+                    })
+                })
             }
         })
     }
