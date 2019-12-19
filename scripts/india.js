@@ -63,24 +63,28 @@ if (annyang)
       // console.log('Je pense avoir compris les mots suivants :', phrases)
     }
   })
+
 }
 
 /*
-*Pop up interaction* 
+*Pop up interactions* 
 */
 
 // Get HTML elements
 const buttonInteraction = document.querySelectorAll('.primary-button')
-const hidePopUp = document.querySelector('.background-pop-up')
+const hidePopUp = document.querySelectorAll('.background-pop-up')
 
 // Close pop-up on click of the button element
-for(let i = 0; i < buttonInteraction.length;i++)
+for (let i = 0; i < hidePopUp.length; i++)
 {
-  buttonInteraction[i].addEventListener('click', () => {
-    if(hidePopUp !== hidePopUp.classList.contains('js-hidden'))
-    {
-      hidePopUp.classList.add('js-hidden')
-    }
-  })
+  for(let j = 0; j < buttonInteraction.length;j++)
+  {
+    buttonInteraction[j].addEventListener('click', () => {
+      if(hidePopUp[i] !== hidePopUp[i].classList.contains('js-hidden'))
+      {
+        hidePopUp[i].classList.add('js-hidden')
+      }
+    })
+  }
 }
 

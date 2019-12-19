@@ -29,6 +29,9 @@
   </div>
   <!-- Planisphere -->
   <div class="planisphere-container hidden">
+    <div class="planisphere-x-container js-planisphere-x">
+      <img class="planisphere-x" src="../assets/img/planisphere-x.svg" alt="X">
+    </div>
     <div class="planisphere-title-container">
       <h1 class="planisphere-title">Où veux-tu aller ?</h1>
     </div>
@@ -112,7 +115,7 @@
         <img src="../assets/img/india/congrats-message.svg" alt="">
         <p>Tu as bien prononcé le mot "Namasté" ! Grâce à ça tu as débloqué le pays suivant : <strong>Japon.</strong>
         </p>
-        <p>Tu peux t'y rendre plus tard grâce au planisphère qui se trouve dans la chambre.</p>
+        <p>Tu peux t'y rendre plus tard grâce au globe qui se trouve dans la chambre ou au planisphère situé en haut à droite de l'écran.</p>
         <a class="primary-button" href="#" title="">D'accord, merci !</a>
       </div>
       <!--Content of the pop-up if the user didn't say correctly "Namasté" -->
@@ -120,7 +123,18 @@
         <img src="../assets/img/india/fail-message.svg" alt="">
         <p>Il semblerait que le mot qui a été dit ne corresponde pas à "Namasté".</p>
         <p>C'est pas grave, tu peux réessayer autant de fois que tu veux ! Tu peux y arriver !</p>
-        <a class="primary-button" href="#" title="">Essayer à nouveau</a>
+        <a class="primary-button" href="#" title="">Réessayer</a>
+      </div>
+    </div>
+  </div>
+  <!--Pop-up displayed by default on the page-->
+  <div class="background-pop-up">
+    <div class="container-pop-up">
+      <div class="content-pop-up">
+        <img src="../assets/img/india/explanation-message.svg" alt="">
+        <p><strong>Namasté !</strong> C'est de cette façon que l'on dit "bonjour" en Inde. Tu veux essayer de prononcer ce mot ? </p>
+        <p>Pour cela, il faut que tu autorises l'utilisation du micro de l'appareil pour qu'il puisse t'entendre. Une petite surprise t'attend si tu dis correctement <strong>"Namasté"</strong> !</p>
+        <a class="primary-button" href="#" title="">Commencer</a>
       </div>
     </div>
   </div>
@@ -128,7 +142,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
   <!-- Script for SpeechKITT library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
-  <!-- Script voices and india -->
+  <!-- Other scripts -->
   <script src="../scripts/planisphere.js"></script>
   <script src="../scripts/voices.js"></script>
   <script src="../scripts/india.js"></script>

@@ -5,8 +5,7 @@ const flowersContainer = document.querySelector(".flower-js")
 // const flowerContainerBottom = document.querySelector(".container-bottom")
 
 const container = document.querySelector(".container-flower")
-for (let j=0; j<100; j++)
-{
+for (let j = 0; j < 100; j++) {
     let flower = document.createElement("img")
     let flowerdiv = document.createElement("div")
     flower.classList.add("exist")
@@ -14,14 +13,18 @@ for (let j=0; j<100; j++)
     flowersContainer.appendChild(flowerdiv)
     flower.setAttribute("src", "../assets/img/sakura.svg")
     flowerdiv.classList.add("flower")
-    flowerdiv.style.left = Math.floor(Math.random()*100) + "%"
-    flowerdiv.style.top = Math.floor(Math.random()*100) + "%"
+    flowerdiv.style.left = Math.floor(Math.random() * 100) + "%"
+    flowerdiv.style.top = Math.floor(Math.random() * 100) + "%"
 }
 const flowers = document.querySelectorAll(".flower")
-for (let i = 0; i<flowers.length; i++)
-{
-    flowers[i].addEventListener("mouseover", () => 
-    {
+for (let i = 0; i < flowers.length; i++) {
+    flowers[i].addEventListener("mouseover", () => {
+        flowers[i].classList.add("animation-flower")
+        setTimeout(() => {
+            flowers[i].classList.add("display-none")
+        }, 1500)
+    })
+    flowers[i].addEventListener("touchmove", () => {
         flowers[i].classList.add("animation-flower")
         setTimeout(() => {
             flowers[i].classList.add("display-none")
@@ -30,15 +33,13 @@ for (let i = 0; i<flowers.length; i++)
 }
 
 
-const imgBgIntro = document.querySelector(".background-intro-image")
-const bgIntro = document.querySelector(".intro")
+// const imgBgIntro = document.querySelector(".background-intro-image")
+// const bgIntro = document.querySelector(".intro")
 
-imgBgIntro.addEventListener("click",() =>
-{
-    imgBgIntro.classList.add("animation-intro")
-    bgIntro.classList.add("subanimation-intro")
-    setTimeout(() =>
-    {
-        bgIntro.classList.add("display-none")
-    }, 1490)
-})
+// imgBgIntro.addEventListener("click", () => {
+//     imgBgIntro.classList.add("animation-intro")
+//     bgIntro.classList.add("subanimation-intro")
+//     setTimeout(() => {
+//         bgIntro.classList.add("display-none")
+//     }, 1490)
+// })

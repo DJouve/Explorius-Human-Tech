@@ -13,6 +13,7 @@ class Planisphere {
         this.mexico = this.planisphereContainer.querySelector('.js-planisphere-mexico')
         this.russia = this.planisphereContainer.querySelector('.js-planisphere-russia')
         this.scotland = this.planisphereContainer.querySelector('.js-planisphere-scotland')
+        this.closeIcon = this.planisphereContainer.querySelector('.js-planisphere-x')
         this.init()
     }
     init() {
@@ -20,6 +21,9 @@ class Planisphere {
         this.mapIcon.addEventListener('click', () => {
             this.planisphereContainer.classList.remove('hidden')
             // close planisphere
+            this.closeIcon.addEventListener('click', () => {
+                this.planisphereContainer.classList.add('hidden')
+            })
             window.addEventListener('keydown', (_event) => {
                 if (_event.code == "Escape") {
                     this.planisphereContainer.classList.add('hidden')
