@@ -25,6 +25,7 @@ class Speak {
         this.foodInfo()
         this.giveSouvenir()
         this.playMusic()
+        this.setVolumeForMusic()
     }
     // welcome the user
     welcome() {
@@ -199,10 +200,39 @@ class Speak {
     playMusic() {
         const music = document.querySelector('.js-music')
         const musicStarter = document.querySelector('.js-music-start')
-        music.volume = 0.1
+        music.volume = 1
         musicStarter.addEventListener('click', () => {
             music.play()
         })
+    }
+    setVolumeForMusic()
+    {
+        const music = document.querySelector('.js-music')
+        music.volume = 1
+
+        const getElements = document.querySelectorAll('.element')
+
+        let audioVoicesPlaying = document.querySelectorAll('.js-audio-is-playing')
+
+        for (let j = 0; j < getElements.length; j++)
+        {
+            getElements[j].addEventListener('click', () => 
+            {
+                console.log(getElements[j])
+                for (let i = 0; i < audioVoicesPlaying.length; i++)
+                {
+                    if (audioVoicesPlaying[i]!== audioVoicesPlaying[i].paused)
+                    {
+                        music.volume = 0.2
+                        console.log(music.volume)
+                    } else {
+                        music.volume = 1
+                        console.log(music.volume)
+                    }
+                }
+            })
+
+        }
     }
 }
 

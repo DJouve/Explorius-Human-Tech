@@ -270,27 +270,26 @@ a.primary-button
 
 
 /** responsive tablet**/
-@media screen and (max-width:1024px){
-    .background{
-        top:-10%;
-    }
-    .monument{
-        top:40%;
-    }
-    .child{
-        top: 50%;
-    }
-    .activity{
-        bottom: 5%;
-    }
-    .food{
-        top: 75%;
-        right: 15%;
-    }
-    .animal{
-        right:15%;
-    }
-    .canvas{
-        left:-5%;
-    }
-  }
+@media screen and (max-width:1024px) and (orientation: landscape)
+{
+    .background { top: -10%; }
+    .monument { top: 40%; }
+    .child { top: 50%; }
+    .activity { bottom: 5%; }
+    .food { top: 75%; right: 15%; }
+    .animal { right: 15%; }
+    .canvas { left: -5%; }
+}
+
+@media screen and (max-width:1024px) and (orientation: portrait)
+{
+    .background { top: 16%; width: 112%; }
+    .monument { top: 75%; }
+    .child { top: 90%; }
+    .activity { bottom: -10%; }
+    .food { top: 95%; right: 5%; }
+    .animal { right: 15%; }
+    .canvas { left: -5%; }
+    .pinatas { width: 113%; height: 113%; }
+    .background-pop-up { width: 113%; height: 113%; bottom: 0; top: 0; }
+}

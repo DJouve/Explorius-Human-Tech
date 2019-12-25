@@ -285,7 +285,8 @@ a.primary-button
 *Responsive on tablet*
 */
 
-@media screen and (max-width:1024px) and (orientation: landscape){
+@media screen and (max-width:1024px) and (orientation: landscape)
+{
     .foreground { top: 55%; }
     .castle-scotland { top: 5%; }
     .animal-scotland, .child-in-scotland { top : 70%; }
@@ -293,7 +294,8 @@ a.primary-button
     .hill { top: 25%; }
 }
 
-@media screen and (max-width:1024px) and (orientation: portrait){
+@media screen and (max-width:1024px) and (orientation: portrait)
+{
     .foreground { top: 80%; width: 110%; }
     .castle-scotland { top: 5%; }
     .animal-scotland, .child-in-scotland { top : 85%; }
