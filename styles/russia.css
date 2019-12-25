@@ -287,17 +287,11 @@ img{
 
 
 /** responsive tablet**/
-@media screen and (max-width:1024px){
-    .background{
-        top: 15%;
-    }
-    .monument{
-        top:15%;
-    }
-    .food{
-        top:70%;
-    }
-    .child{
-        top: 60%;
-    }
-  }
+@media screen and (max-width:1024px) and (orientation: landscape) {
+    .background { top: 32%; left: -1%; }
+    .monument { top: 0%; left: 25%; width: 60%; }
+    .food { top: 100%; }
+    .child { top: 80%; }
+    .activity { top: 60%; left: 90%;}
+    .animal {width: 15%; top: 60%; }
+}

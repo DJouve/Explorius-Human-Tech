@@ -15,8 +15,6 @@ body
 
 /* Icons */
 
-/* Icons */
-
 .icons-container{
     position: absolute;
     height: 20%;
@@ -287,18 +285,10 @@ a.primary-button
 *Responsive on tablet*
 */
 
-@media screen and (max-width:1024px){
-    .background-scotland { top: 55% }
-
-    .castle-scotland { top: 60%; }
-
+@media screen and (max-width:1024px) and (orientation: landscape){
+    .foreground { top: 55% }
+    .castle-scotland { top: 5%; }
     .animal-scotland,  
-    .child-in-scotland
-    { top : 70%; }
-
-    .food-scotland
-    { top : 90%; }
-
-    .activity-scotland
-    { top : 75%; }
+    .child-in-scotland { top : 70%; }.food-scotland { top : 90%; }.activity-scotland { top : 75%; }
+    .hill { top: 25%; }
 }
