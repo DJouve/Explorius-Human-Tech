@@ -286,9 +286,20 @@ a.primary-button
 */
 
 @media screen and (max-width:1024px) and (orientation: landscape){
-    .foreground { top: 55% }
+    .foreground { top: 55%; }
+    .castle-scotland { top: 5%; }
+    .animal-scotland, .child-in-scotland { top : 70%; }
+    .food-scotland { top : 90%; }.activity-scotland { top : 75%; }
+    .hill { top: 25%; }
+}
+
+@media screen and (max-width:1024px) and (orientation: portrait){
+    .foreground { top: 80%; width: 110%; }
     .castle-scotland { top: 5%; }
     .animal-scotland,  
-    .child-in-scotland { top : 70%; }.food-scotland { top : 90%; }.activity-scotland { top : 75%; }
-    .hill { top: 25%; }
+    .child-in-scotland { top : 85%; }.food-scotland { top : 100%; }.activity-scotland { top : 90%; }
+    .hill, .small-hill { top: 65%; }
+    .water { top: 70%; width: 111%; }
+    .hide-nessie { top: 80%; }
+    .nessie-container { top: 85%; }
 }

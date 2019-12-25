@@ -295,3 +295,12 @@ img{
     .activity { top: 60%; left: 90%;}
     .animal {width: 15%; top: 60%; }
 }
+
+@media screen and (max-width:1024px) and (orientation: portrait) {
+    .background { top: 70%; left: -1%; }
+    .monument { top: 50%; left: 25%; width: 60%; }
+    .food { top: 100%; }
+    .child { top: 95%; }
+    .activity { top: 85%; left: 90%; }
+    .animal {width: 15%; top: 90%; }
+}
