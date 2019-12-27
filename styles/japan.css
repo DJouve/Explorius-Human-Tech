@@ -1,4 +1,5 @@
-html, body{
+html, body
+{
     position: fixed;
     overflow: hidden;
 }
@@ -14,7 +15,8 @@ body
 
 /* Icons */
 
-.icons-container{
+.icons-container
+{
     position: absolute;
     height: 20%;
     width: 10%;
@@ -27,7 +29,8 @@ body
     z-index: 10;
 }
 
-.icons-container img{
+.icons-container img
+{
     height: 30%;
     width: 35%;
     margin-top: 20px;
@@ -43,7 +46,8 @@ body
 *Pop up*
 */
 
-.hidden{
+.hidden
+{
     display:none;
 }
 
@@ -151,6 +155,7 @@ a.primary-button
     height: auto;
     z-index: 2;
 }
+
 .monument
 {
     top:37%;
@@ -159,6 +164,7 @@ a.primary-button
     height: auto;
     z-index: 1;
 }
+
 .animal
 {
     top: 74%;
@@ -167,6 +173,7 @@ a.primary-button
     height: auto;
     z-index: 2;
 }
+
 .object
 {
     top: -20%;
@@ -176,7 +183,8 @@ a.primary-button
     z-index: 2;
 }
 
-.souvenir-rotate{
+.souvenir-rotate
+{
     animation: object-spinning-animation 2s ease-in-out 1;
 }
 
@@ -198,6 +206,7 @@ a.primary-button
     z-index: 2;
 
 }
+
 .activity
 {
     top: 30%;
@@ -207,81 +216,11 @@ a.primary-button
     z-index: 2;
 }
 
-.img-js:hover{
+.img-js:hover
+{
     cursor: pointer;
     transform: scale(1.05);
 }
-
-/* Text CSS */
-
-/* .text
-{
-    background-color: #fff;
-    border-radius: 5px;
-    width: 30px;
-    height: 20px;
-    left: 50%;
-    top: 58%;
-    z-index: 4;
-    opacity: 0;
-    transition: all 0.5s ease-in 0s;
-}
-
-.text p
-{
-    color: #222;
-    font-size: 2.5px;
-    padding: 2px;
-    margin: 0;
-    transition: opacity 0.7s ease-in 0s;
-    position: absolute;
-}
-.text a
-{
-    color: white;
-    text-decoration: none;
-    font-size: 3px;
-    width: 11px;
-    height: auto;
-    border-radius: 1px;
-    padding: 2px;
-    margin-left: 8%;
-}
-.text .yes
-{
-    background-color: green;
-}
-.text .no 
-{
-    background-color: red;
-}
-
-.visible
-{
-    transform: scale(10, 10);
-    left: 35%;
-    top: 40%;
-    opacity: 1;
-}
-
-.visible-dct
-{
-    opacity: 1;
-} */
-
-/* Flower */
-
-/* .flower-js
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    will-change: transform;
-    z-index: 3;
-    overflow: hidden;
-} */
 
 .flower
 {
@@ -307,68 +246,18 @@ a.primary-button
 }
 
 
-/* Intro de page
-.intro 
-{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    z-index: 20;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(#03224C, lightblue);
-}
-p.background-intro
-{
-    width: 70%;
-    font-size: 70px;
-    position: absolute;
-    bottom: 10%;
-    left: 32%;
-}
-img.background-intro-image
-{
-    width: 16%;
-    height: 30%;
-    border-radius: 50%;
-    margin: 0 auto;
-    top: 30%;
-    left: 42%;
-    position: absolute;
-    border: lightblue solid 3px;
-    background: lightblue;
-    will-change: all;
-}
-
-.animation-intro
-{
-    animation: animation-intro ease 1.5s;
-}
-.subanimation-intro
-{
-    animation: subanimation-intro ease 1.5s;
-}
-@keyframes animation-intro{
-    0% {border-radius: 50%}
-    99% {border-radius: 2%;width: 96%; height: 96%; top: 2%; left: 2%;opacity: 1;}
-    100% {border-radius: 0%;width: 100%; height: 100%; top: 0%; left: 0%;opacity: 0;}
-}
-@keyframes subanimation-intro{
-    0% {opacity: 1;}
-    90% {opacity: 1;}
-    100% {opacity: 0;}
-} */
-
 /** responsive tablet**/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
-    .country{
+@media screen and (max-width: 1024px) and (orientation: landscape)
+{
+    .country
+    {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
     }
 
-    .flower-js{
+    .flower-js
+    {
     position: absolute;
     top: 0;
     left: 0;
@@ -377,26 +266,38 @@ img.background-intro-image
     overflow: hidden;
     }
 
-    .background{
-        top: 25%;
-    }
-    .monument{
-        top:50%;
-    }
-    .character{
-        top: 70%;
-    }
-    .activity{
-        top: 46%;
-    }
-    .food{
-        top: 80%;
-    }
-    .object
+    .background { left: -7%; top: 15%; width: 115%; }
+    .monument { left: 0; top: 40%; width: 100%; }
+    .character { top: 70%; }
+    .activity { top: 37%; }
+    .food { top: 80%; }
+    .object { top: 83%; }
+    .animal { top: 80%; }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait)
+{
+    .country
     {
-        top: 64%;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
     }
-    .animal{
-        top: 75%;
+
+    .flower-js
+    {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     }
- }
+
+    .background { top: 50%; left: -11%; width: 120%; }
+    .monument { width: 110%; top: 65%; left: -5% }
+    .character { top: 85%; }
+    .activity { top: 64%; }
+    .food { top: 90%; right: 25%; }
+    .object, .animal { top: 90%; }
+}

@@ -283,13 +283,13 @@ a.primary-button
 
 @media screen and (max-width:1024px) and (orientation: portrait)
 {
-    .background { top: 16%; width: 112%; }
-    .monument { top: 75%; }
-    .child { top: 90%; }
+    .background { top: 23%; width: 126%; right: 0; }
+    .monument { top: 90%; left: 35%; }
+    .child { top: 105%; }
     .activity { bottom: -10%; }
-    .food { top: 95%; right: 5%; }
+    .food { top: 110%; right: 0; }
     .animal { right: 15%; }
     .canvas { left: -5%; }
-    .pinatas { width: 113%; height: 113%; }
-    .background-pop-up { width: 113%; height: 113%; bottom: 0; top: 0; }
+    .pinatas { width: 126%; height: 126%; }
+    .background-pop-up { width: 126%; height: 126%; bottom: 0; top: 0; }
 }
