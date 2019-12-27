@@ -325,32 +325,26 @@ a.primary-button
 }
 
 /** responsive tablet**/
-@media screen and (max-width:1024px){
-    .background{
-        top: 25%;
-    }
-    .monument{
-        top:50%;
-    }
-    .character{
-        top: 70%;
-    }
-    .activity{
-        top: 78%;
-    }
-    .food{
-        top: 80%;
-    }
-    .object
-    {
-        top: 84%;
-    }
-    .animal{
-        top: 75%;
-    }
-    .feature-container
-    {
-        margin-top: 15%;
-        width: 80%;
-        margin-left: 10%;
-    }
+@media screen and (max-width:1024px) and (orientation: landscape)
+{
+    .background { top: 10%; }
+    .monument { top: 26%; width: 30%; }
+    .character { top: 70%; }
+    .activity { top: 78%; }
+    .food { top: 80%; }
+    .object { top: 84%; }
+    .animal { top: 75%; width: 25%; }
+    .feature-container { margin-top: 15%; width: 80%; margin-left: 10%; }
+}
+
+@media screen and (max-width:1024px) and (orientation: portrait)
+{
+    .background { top: 45%; left: -10%; width: 115%; }
+    .monument { top: 55%; width: 30%; }
+    .character { top: 80%; }
+    .activity { top: 84%; }
+    .food { top: 85%; }
+    .object { top: 84%; }
+    .animal { top: 83%; width: 25%; }
+    .feature-container { margin-top: 15%; width: 80%; margin-left: 10%; }
+}
