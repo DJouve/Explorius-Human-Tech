@@ -142,25 +142,6 @@ body
     transform: scale(1.05);
 }
 
-/* 
-*Responsive on tablet*
-*/
-
-@media screen and (max-width:1024px){
-    .background-india, .monument-india 
-    { top: 30%; }
-
-    .animal-elephant,  
-    .child-in-india, .souvenir-from-india
-    { top : 70%; }
-
-    .food-india
-    { top : 90%; }
-
-    .main-activity-india
-    { top : 75%; }
-}
-
 /*
 *Style of the pop up messages*
 */
@@ -245,4 +226,27 @@ a.primary-button
 {
     opacity: 0;
     pointer-events: none;
+}
+
+/* 
+*Responsive on tablet*
+*/
+
+@media screen and (max-width:1024px) and (orientation: landscape)
+{
+    .background-india, .monument-india { top: 30%; }
+    .animal-elephant, .child-in-india, .souvenir-from-india { top : 70%; }
+    .food-india { top : 90%; }
+    .main-activity-india { top : 75%; }
+}
+
+@media screen and (max-width:1024px) and (orientation: portrait)
+{
+    .background-india { top: 89%; left: -1%; width: 159%; }
+    .monument-india { top: 85%; width: 80%; left: 35%; }
+    .animal-elephant { top : 125%; }
+    .food-india { top : 145%; right: -10%; }
+    .main-activity-india { top : 130%; width: 10%; right: -35%; }
+    .child-in-india { top: 125%; width: 10%; }
+    .background-pop-up { width: 158%; height: 158%; }
 }
