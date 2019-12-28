@@ -157,34 +157,24 @@ body
 
 
 /** responsive tablet**/
-@media screen and (max-width:1030px){
-    .background{
-        top: 20%;
-    }
-    .monument{
-        top:50%;
-    }
-    .character{
-        top: 70%;
-    }
-    .activity{
-        top: 60%;
-    }
-    .food{
-        top: 88%;
-    }
-    .object
-    {
-        top: 78%;
-    }
-    .animal{
-        top: 61%;
-    }
+@media screen and (max-width:1024px) and (orientation: landscape)
+{
+    .background { top: 20%; }
+    .monument { top: 50%; }
+    .character { top: 70%; }
+    .activity { top: 60%; }
+    .food { top: 88%; }
+    .object { top: 78%; }
+    .animal { top: 61%; }
+}
 
- @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)
- {
-     .background
-     {
-         top: 20%;
-     }
- }
+@media screen and (max-width:1024px) and (orientation: portrait)
+{
+    .background { top: 55%; }
+    .monument { top: 65%; }
+    .character { top: 75%; }
+    .activity { top: 70%; }
+    .food { top: 90%; }
+    .object { top: 80%; }
+    .animal { top: 75%; }
+}
