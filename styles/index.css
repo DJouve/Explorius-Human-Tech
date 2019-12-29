@@ -64,7 +64,6 @@ h1 , p
     padding: 15px;
     z-index: 2;
     transform: translateY(-50%);
-    /* background-color: rgba(251, 251, 251, 0.8); */
     border-radius: 10px;
 }
 
