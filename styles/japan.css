@@ -54,10 +54,11 @@ body
 .background-pop-up
 {
     position: absolute;
-    height: 110%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
     left: 0;
-    bottom: -10%;
+    /* bottom: -10%; */
     background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.3s;
     z-index: 15;
@@ -66,10 +67,13 @@ body
 .container-pop-up
 {
     position: absolute;
-    height: 80%;
-    width: 35%;
-    top: calc(45% - 40%);
+    height: 70%;
+    width: 30%;
+    top: calc(50% - 70%/2);
     left: calc(50% - 35%/2);
+    background-color: rgb(251, 251, 251);
+    border-radius: 10px;
+    padding: 20px 30px;
 }
 
 .background-pop-up .container-pop-up .content-pop-up
@@ -83,21 +87,19 @@ body
     width: 100%;
     top: calc(50% - 50%);
     left: calc(50% - 50%);
-    background-color: rgb(251, 251, 251);
-    border-radius: 10px;
 }
 
 .background-pop-up .content-pop-up img
 {
     height: auto;
-    width: 200px;
+    width: 40%;
 }
 
 p
 {
     font-family: "Montserrat";
-    font-size: 20px;
-    margin: 0px 30px 0px 30px;
+    font-size: 16px;
+    margin: 0px 40px 0px 40px;
     text-align: center;
 }
 
@@ -105,12 +107,12 @@ a.primary-button
 {
     text-decoration: none;
     width: 170px;
-    height: 25px;
+    height: 20px;
     padding: 15px;
     background-color: rgb(119, 213, 219);
     border-radius: 5px;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
     color: rgb(0, 0, 0);
@@ -273,6 +275,7 @@ a.primary-button
     .food { top: 80%; }
     .object { top: 83%; }
     .animal { top: 80%; }
+    .container-pop-up { height: 60%; top: calc(50% - 60%/2); left: calc(50% - 39%/2); }
 }
 
 @media screen and (max-width: 1024px) and (orientation: portrait)
@@ -300,4 +303,5 @@ a.primary-button
     .activity { top: 64%; }
     .food { top: 90%; right: 25%; }
     .object, .animal { top: 90%; }
+    .container-pop-up { height: 35%; width: 35%; top: calc(50% - 35%/2); left: calc(50% - 44%/2); }
 }
