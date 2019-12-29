@@ -349,3 +349,23 @@ a.primary-button
     color: rgb(0, 0, 0);
 }
 
+/* Responsive on tablet */
+
+@media screen and (max-width: 1024px) and (orientation: landscape)
+{
+    .bedroom-furniture .window { width: 40%; }
+    .window { top: 20%; left: 35%; }
+    .bookcase-container { width: 30%; bottom: 20%; left: 0; }
+    .bed { top: 45%; width: 45%; }
+    .rug-container { width: 45%; top: 60%; left: 20%; }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait)
+{
+    .bedroom-furniture .window { width: 50%; }
+    .window { top: 29%; left: 34%; }
+    .bookcase-container { width: 33%; bottom: 24%; left: 0; }
+    .bed { top: 45%; width: 55%; }
+    .rug-container { width: 50%; top: 71%; left: 25%; }
+}
+
